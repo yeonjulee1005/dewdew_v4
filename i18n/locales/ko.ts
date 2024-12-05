@@ -7,6 +7,7 @@ export default {
     project: 'Project',
     blog: 'Blog',
     archives: 'Archives',
+    colorsTranslate: '내 색상 찾아줘!',
   },
   pageSubTitle: {
     colorsTranslate: '내 색상 찾아줘..',
@@ -28,7 +29,9 @@ export default {
     portfolio: '포트폴리오',
     archives: '아카이브',
     send: '보내기',
+    regenerate: '색상 생성',
     version: '버전 {version}',
+    dewdewWorld: 'Dewdew World',
     copyright: 'Copyright 2024 © Yeonju Lee All Rights Reserved.',
     designed: 'Designed by Yeonju Lee.',
   },
@@ -173,6 +176,7 @@ export default {
   placeholder: {
     inputName: '성함을 입력해주세요.',
     inputEmail: '이메일을 적어주세요!',
+    inputContent: '내용을 입력해주세요.',
   },
   messages: {
     leavePage: '페이지를 이탈하셨네요.',

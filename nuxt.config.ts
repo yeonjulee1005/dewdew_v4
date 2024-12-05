@@ -47,8 +47,8 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL ?? process.env.NUXT_ENV_VERCEL_URL ?? 'http://localhost:4500',
   },
   colorMode: {
-    preference: 'system',
-    fallback: 'light',
+    preference: 'light',
+    fallback: 'system',
   },
   content: {
     highlight: {

@@ -9,7 +9,7 @@ withDefaults(
   }>(),
   {
     dateTime: '',
-    fullDateTime: true,
+    fullDateTime: false,
     capitalDateTime: true,
   },
 )

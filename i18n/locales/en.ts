@@ -7,6 +7,7 @@ export default {
     project: 'Project',
     blog: 'Blog',
     archives: 'Archives',
+    colorsTranslate: 'Find my colors!',
   },
   pageSubTitle: {
     colorsTranslate: 'Find my colors..',
@@ -28,7 +29,9 @@ export default {
     portfolio: 'Portfolio',
     archives: 'Archives',
     send: 'Send',
+    regenerate: 'Regenerate',
     version: 'Version {version}',
+    dewdewWorld: 'Dewdew World',
     copyright: 'Copyright 2024 © Yeonju Lee All Rights Reserved.',
     designed: 'Designed by Yeonju Lee.',
   },
@@ -173,6 +176,7 @@ export default {
   placeholder: {
     inputName: 'Please enter your name.',
     inputEmail: 'Please enter your email.',
+    inputContent: 'Please enter your content.',
   },
   messages: {
     leavePage: 'You left the page.',

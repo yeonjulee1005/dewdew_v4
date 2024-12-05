@@ -11,7 +11,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="h-[2000px] flex items-center justify-end border-2 border-red-500 mt-32">
+  <div class="w-full h-[2000px] flex items-center justify-center border-2 border-red-500 mt-40">
     <h1>
       Main
     </h1>

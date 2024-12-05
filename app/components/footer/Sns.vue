@@ -14,6 +14,7 @@ const { viewMenuData } = storeToRefs(useMenuStore())
       icon-lead-class="w-6 h-6"
       button-size="lg"
       button-variant="outline"
+      button-color="neutral"
       :tooltip-text="$t(`subMenu.${menu.code}`)"
       @click="navigateTo(menu.url ?? '')"
     />

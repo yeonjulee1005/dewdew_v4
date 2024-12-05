@@ -7,9 +7,18 @@ const config = useRuntimeConfig()
     <span class="text-center text-xs break-keep">
       {{ $t('texts.copyright') }}
     </span>
-    <span class="text-center text-xs break-keep">
-      {{ $t('texts.designed') }}
-    </span>
+    <div class="flex items-center gap-x-2">
+      <NuxtLink
+        class="text-center text-xs break-keep text-indigo-500 cursor-pointer hover:text-indigo-400"
+        to="https://www.dewdew.world"
+        external
+      >
+        {{ $t('texts.dewdewWorld') }}
+      </NuxtLink>
+      <span class="text-center text-xs break-keep">
+        {{ $t('texts.designed') }}
+      </span>
+    </div>
     <span class="text-center text-xs break-keep">
       {{ $t('texts.version', { version: config.public.appVersion.replaceAll('"', '') }) }}
     </span>

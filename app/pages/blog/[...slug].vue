@@ -24,12 +24,12 @@ useHead({
 </script>
 
 <template>
-  <UContainer class="content-container flex gap-4">
+  <UContainer class="flex flex-col-reverse sm:flex-row gap-4 mt-40">
     <ContentNavigation v-slot="{ navigation }">
-      <div class="content-navigation flex flex-column gap-2 mt-20">
+      <div class="min-w-fit h-fit flex flex-col gap-2 px-4 py-2 mt-10 rounded-lg ring-2 ring-indigo-200/50">
         <span
           v-if="navigation.length"
-          class="navigation-title"
+          class="text-xl font-semibold"
         >
           {{ $t('blog.recentPost') }}
         </span>
@@ -37,26 +37,32 @@ useHead({
           v-for="(link, index) of reverseNavigation(navigation[0]?.children)"
           v-show="index < 5 && link._path !== '/blog'"
           :key="link._path"
-          class="navigation-link"
+          class="text-lg break-keep cursor-pointer hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors duration-200 ease-in-out"
           :to="link._path"
         >
           {{ link.navTitle || link.title }}
         </NuxtLink>
       </div>
     </ContentNavigation>
+    <USeparator class="block mt-10 sm:hidden" />
     <ContentDoc
       v-slot="{ doc }"
       head
     >
-      <div class="flex flex-column items-end w-full">
-        <ANuxtDate
+      <div class="w-full flex flex-col items-end gap-y-2 px-2 py-3">
+        <ANuxtTime
           v-if="doc.date"
           :date-time="doc.date"
         />
-        <ContentRenderer
-          class="w-full mb-20 break-keep"
-          :value="doc"
-        />
+        <ContentRenderer :value="doc">
+          <h1 class="text-4xl font-bold text-indigo-500 break-keep">
+            {{ doc.title }}
+          </h1>
+          <ContentRendererMarkdown
+            class="w-full mb-10 p-2 break-keep"
+            :value="doc"
+          />
+        </ContentRenderer>
         <Giscus
           v-if="doc._path !== '/blog'"
           id="comments"

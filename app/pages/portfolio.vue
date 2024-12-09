@@ -35,8 +35,11 @@ const option = {
 
 const selectedPortfolioData = ref<DataDatabase['data']['Tables']['portfolio']['Row']>()
 
-const { data: portfolioData } = useAsyncData('portfolioData', async () => {
-  const { data } = await useFetch('/api/portfolio')
+const { data: portfolioData } = await useAsyncData('portfolioData', async () => {
+  const { data } = await useFetch('/api/portfolio', {
+    headers: useRequestHeaders(['cookie']),
+    immediate: true,
+  })
 
   return data.value
     ? data.value
@@ -56,30 +59,32 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full h-fit flex flex-col items-center justify-center gap-y-6 mt-40">
-    <Flicking
-      :options="option"
-      :plugins="plugin"
-    >
-      <NuxtImg
-        v-for="item in portfolioData"
-        :key="item.url"
-        class="w-50 h-50 object-cover cursor-pointer border-4 border-stone-300 dark:border-stone-700 rounded-lg hover:border-indigo-400 hover:dark:border-indigo-400/70 transition-border duration-300 ease-in-out mx-4"
-        :src="item?.thumbnail_url ?? ''"
-        width="200"
-        height="200"
-        format="webp"
-        fit="cover"
-        :alt="item?.alt"
-        :draggable="false"
-        @contextmenu.prevent
-        @click="selectPortfolio(item)"
-        @mouseenter="selectPortfolio(item)"
-      />
-      <template #viewport>
-        <div class="flicking-pagination portfolio-pagination" />
-      </template>
-    </Flicking>
+  <div class="w-full h-fit flex flex-col items-center justify-center gap-y-6 px-6 mt-40">
+    <ClientOnly>
+      <Flicking
+        :options="option"
+        :plugins="plugin"
+      >
+        <NuxtImg
+          v-for="item in portfolioData"
+          :key="item.url"
+          class="w-50 h-50 object-cover cursor-pointer border-4 border-stone-300 dark:border-stone-700 rounded-lg hover:border-indigo-400 hover:dark:border-indigo-400/70 transition-border duration-300 ease-in-out mx-4"
+          :src="item?.thumbnail_url ?? ''"
+          width="200"
+          height="200"
+          format="webp"
+          fit="cover"
+          :alt="item?.alt"
+          :draggable="false"
+          @contextmenu.prevent
+          @click="selectPortfolio(item)"
+          @mouseenter="selectPortfolio(item)"
+        />
+        <template #viewport>
+          <div class="flicking-pagination" />
+        </template>
+      </Flicking>
+    </ClientOnly>
     <UCard
       v-if="selectedPortfolioData"
       :ui="{
@@ -111,16 +116,3 @@ onMounted(() => {
     </UCard>
   </div>
 </template>
-
-<style lang="scss">
-.flicking-pagination.portfolio-pagination {
-  position: relative;
-  margin-top: 40px;
-  .flicking-pagination-bullet {
-    background-color: lightgray !important;
-  }
-  .flicking-pagination-bullet-active {
-    background-color: lightblue !important;
-  }
-}
-</style>

@@ -6,7 +6,7 @@ export default {
     portfolio: 'Portfolio',
     project: 'Project',
     blog: 'Blog',
-    archives: 'Archives',
+    archive: 'Archives',
     colorsTranslate: 'Find my colors!',
   },
   pageSubTitle: {
@@ -20,7 +20,7 @@ export default {
     colorsTranslate: 'Find the forgotten color codes.',
     hhkb: 'This is HHKB keyboard modeling using Three.js.',
     blog: 'This is the blog of FE Developer Yeonju Lee.',
-    archives: 'This is the photo record of FE Developer Yeonju Lee.',
+    archive: 'This is the photo record of FE Developer Yeonju Lee.',
   },
   button: {
     moveMain: 'Move',

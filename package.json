@@ -21,7 +21,8 @@
     "upgrade:force": "nuxt upgrade --force",
     "supabase:login": "supabase login",
     "supabase:type": "supabase gen types typescript --project-id tgtlrqqasaiavynmlxkc --schema public > app/types/supabase.ts",
-    "supabase:type-menu": "supabase gen types typescript --project-id tgtlrqqasaiavynmlxkc --schema menu > app/types/supabase-menu.ts"
+    "supabase:type-menu": "supabase gen types typescript --project-id tgtlrqqasaiavynmlxkc --schema menu > app/types/supabase-menu.ts",
+    "supabase:type-data": "supabase gen types typescript --project-id tgtlrqqasaiavynmlxkc --schema data > app/types/supabase-data.ts"
   },
   "dependencies": {
     "@nuxtjs/seo": "^2.0.2",

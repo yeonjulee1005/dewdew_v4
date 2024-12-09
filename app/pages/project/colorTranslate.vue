@@ -142,7 +142,7 @@ initColorData()
 </script>
 
 <template>
-  <div class="w-full h-fit flex md:flex-row flex-col items-center justify-center gap-x-10 mt-40">
+  <div class="w-full h-fit flex md:flex-row flex-col items-center justify-center px-2 gap-x-10 mt-40">
     <div class="flex flex-col gap-10 px-4 py-3">
       <div
         :style="formData.backgroundColor"

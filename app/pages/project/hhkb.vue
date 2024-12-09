@@ -16,12 +16,12 @@ useHead({
 </script>
 
 <template>
-  <div class="w-full h-fit flex flex-col items-center justify-center gap-y-10 mt-40">
+  <div class="w-full h-fit flex flex-col items-center justify-center gap-y-10 px-6 mt-40">
     <p class="w-full text-4xl text-left font-semibold">
       {{ $t('hhkb.title') }}
     </p>
     <ASplineCanvas
-      canvas-class="w-full min-h-[500px]"
+      canvas-class="w-full h-[500px]"
       :spline-url="splineUrl"
     />
     <UTextarea

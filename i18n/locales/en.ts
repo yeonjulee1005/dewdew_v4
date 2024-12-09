@@ -152,6 +152,80 @@ export default {
     title: 'HHKB Keyboard Modeling',
     inputPlaceholder: 'If you write in English or click the keyboard with the mouse, the 3D modeled hhkb keyboard will work below.',
   },
+  portfolio: {
+    PFC001: {
+      title: 'Goodnodes Co., Ltd.',
+      description: 'This is the introduction page of Goodnode Co., Ltd. developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+    },
+    PFC002: {
+      title: 'Dewbee',
+      description: 'A personal side project, an expenditure management service for surplus funds developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+    },
+    PFC003: {
+      title: 'Pixel Checker',
+      description: 'A personal side project, a monitor pixel check service developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+    },
+    PFC004: {
+      title: 'Dewdew World',
+      description: 'A static website developed using Astro. It is a personal development blog.',
+    },
+    PFC005: {
+      title: 'Dooramg',
+      description: 'A personal side project, a two-wheeled vehicle management solution developed using Nuxt3. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+    },
+    PFC006: {
+      title: 'Gadget Korea',
+      description: 'The company introduction page of Gadget Korea developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100%, BE: 100%',
+    },
+    PFC007: {
+      title: 'Gadget Korea CRM',
+      description: 'A back office managing the introduction page of Gadget Korea developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+    },
+    PFC008: {
+      title: 'Usimsa',
+      description: 'A roaming eSim service page developed using Nuxt3. It is a lead development project. (FE: Nuxt3, BE: Nest) Participation: FE: 90% / BE: 5%',
+    },
+    PFC009: {
+      title: 'Usimsa CRM',
+      description: 'The Usimsa admin page developed using Nuxt3. It is a lead development project. (FE: Nuxt3, BE: Nest) Participation: FE: 90% / BE: 5%',
+    },
+    PFC010: {
+      title: 'Usimsa Partner Page',
+      description: 'The Usimsa partners admin page developed using Nuxt3. It is a lead development project. (FE: Nuxt3, BE: Nest) Participation: FE: 90% / BE: 5%',
+    },
+    PFC011: {
+      title: 'Usimsa Dashboard',
+      description: 'A collection of Usimsa sales status graphs developed using Nuxt3 and eCharts. It is a lead development project. (FE: Nuxt3 / BE: Nest) Participation: FE: 90% / BE: 5%',
+    },
+    PFC012: {
+      title: 'Avrosoft Korea',
+      description: 'A responsive webpage based on PHP and Javascript.',
+    },
+    PFC013: {
+      title: 'HR Management Platform',
+      description: 'A promotional and user page for a cloud-based labor and HR management platform developed using Nuxt2 and Node.js.',
+    },
+    PFC014: {
+      title: 'Doowon',
+      description: 'A responsive webpage based on PHP and Javascript.',
+    },
+    PFC015: {
+      title: 'Orijen',
+      description: 'A responsive webpage based on PHP and Javascript.',
+    },
+    PFC016: {
+      title: 'Woozo',
+      description: 'A responsive webpage based on PHP and Javascript.',
+    },
+    PFC017: {
+      title: 'Invenia',
+      description: 'Maintenance of the company legacy site.',
+    },
+    PFC018: {
+      title: 'Bega',
+      description: 'A responsive webpage based on Javascript.',
+    },
+  },
   archives: {
     title: 'Dewdew History',
     back: 'Back',

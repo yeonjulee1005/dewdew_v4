@@ -152,6 +152,80 @@ export default {
     title: 'HHKB Keyboard Modeling',
     inputPlaceholder: '영어로 작성하거나 마우스로 키보드를 클릭하면, 아래의 3D 모델링된 hhkb 키보드가 동작합니다.',
   },
+  portfolio: {
+    PFC001: {
+      title: '굿노드 주식회사',
+      description: 'Nuxt3, Supabase를 이용하여 개발한 굿노드 주식회사의 소개페이지 입니다. (FE:Nuxt3 / BE: Supabase) 참여: FE: 100% / BE: 100%',
+    },
+    PFC002: {
+      title: '듀비',
+      description: '1인 사이드 프로젝트로 진행한, Nuxt3, Supabase를 이용하여 개발한 여유자금 지출관리 서비스 입니다. (FE:Nuxt3 / BE: Supabase) 참여: FE: 100% / BE: 100%',
+    },
+    PFC003: {
+      title: '픽셀 체커',
+      description: '1인 사이드 프로젝트로 진행한, Nuxt3, Supabase를 이용하여 개발한 모니터 픽셀 체크 서비스 입니다. (FE:Nuxt3 / BE: Supabase) 참여: FE: 100% / BE: 100%',
+    },
+    PFC004: {
+      title: '듀듀 월드',
+      description: 'Astro를 이용하여 개한 정적 웹사이트 입니다. 개인 개발 블로그입니다.',
+    },
+    PFC005: {
+      title: '두람쥐',
+      description: '1인 사이드 프로젝트로 진행한, Nuxt3 를 이용하여 개발한 이륜자동차 관리 솔루션 입니다. (FE:Nuxt3 /  BE:Supabase) 참여: FE: 100% / BE: 100%',
+    },
+    PFC006: {
+      title: '가제트코리아',
+      description: 'Nuxt3, Supabase를 이용하여 개발한 가제트코리아 회사소개 페이지 입니다. (FE:Nuxt3 / BE:Supabase) 참여: FE: 100%, BE: 100%',
+    },
+    PFC007: {
+      title: '가제트코리아 CRM',
+      description: 'Nuxt3, Supabase를 사용하여 개발한 가제트코리아 소개페이지를 관리하는 백오피스 입니다. (FE:Nuxt3 / BE: Supabase) 참여: FE: 100% / BE: 100%',
+    },
+    PFC008: {
+      title: '유심사',
+      description: 'Nuxt3를 사용하여 개발한 로밍 eSim 서비스 페이지 입니다. 리드개발 진행건 입니다. (FE:Nuxt3, BE: Nest) 참여: FE: 90% / BE: 5%',
+    },
+    PFC009: {
+      title: '유심사 CRM',
+      description: 'Nuxt3를 사용하여 개발한 유심사 관리자페이지 입니다. 리드개발 진행건 입니다. (FE:Nuxt3, BE: Nest) 참여: FE: 90% / BE: 5%',
+    },
+    PFC010: {
+      title: '유심사 파트너페이지',
+      description: 'Nuxt3 를 사용하여 개발한 유심사 파트너스 관리자페이지 입니다. 리드개발 진행건 입니다. (FE:Nuxt3, BE: Nest) 참여: FE: 90% / BE: 5%',
+    },
+    PFC011: {
+      title: '유심사 대시보드',
+      description: 'Nuxt3, eCharts를 이용하여 개발한 유심사 판매현황 그래프 모음입니다. 리드개발 진행건 입니다.(FE:Nuxt3 / BE:Nest) 참여: FE: 90% / BE:5%',
+    },
+    PFC012: {
+      title: '아브로소프트 코리아',
+      description: 'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+    },
+    PFC013: {
+      title: '인사관리플렛폼',
+      description: 'Nuxt2, Node.js를 이용한 클라우드기반 노무인사관리플랫폼의 홍보페이지 및 사용자페이지 입니다.',
+    },
+    PFC014: {
+      title: '두원',
+      description: 'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+    },
+    PFC015: {
+      title: '오리젠',
+      description: 'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+    },
+    PFC016: {
+      title: '우조',
+      description: 'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+    },
+    PFC017: {
+      title: '인베니아',
+      description: '자사 래거시 사이트 유지보수',
+    },
+    PFC018: {
+      title: '베가',
+      description: '자바스크립트 기반의 반응형 웹페이지 입니다.',
+    },
+  },
   archives: {
     title: 'Dewdew History',
     back: '뒤로가기',

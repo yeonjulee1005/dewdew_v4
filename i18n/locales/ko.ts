@@ -6,7 +6,7 @@ export default {
     portfolio: 'Portfolio',
     project: 'Project',
     blog: 'Blog',
-    archives: 'Archives',
+    archive: 'Archives',
     colorsTranslate: '내 색상 찾아줘!',
   },
   pageSubTitle: {
@@ -20,7 +20,7 @@ export default {
     colorsTranslate: '잊고 지낸 색상코드를 찾아보세요.',
     hhkb: 'Three.js을 이용한 HHKB 키보드 모델링 입니다.',
     blog: 'FE개발자 이연주의 블로그 입니다.',
-    archives: 'FE개발자 이연주의 사진기록 입니다.',
+    archive: 'FE개발자 이연주의 사진기록 입니다.',
   },
   button: {
     moveMain: '이동하기',

@@ -25,6 +25,7 @@ const slideoverTrigger = ref(false)
         :height="60"
         loading="eager"
         :quality="80"
+        alt="logo"
         @click="navigateTo('/')"
       />
       <USlideover
@@ -57,6 +58,7 @@ const slideoverTrigger = ref(false)
               :height="50"
               loading="eager"
               :quality="80"
+              alt="logo"
               @click="navigateTo('/main')"
             />
             <AButton

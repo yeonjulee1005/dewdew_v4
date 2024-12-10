@@ -28,6 +28,7 @@ const { windowSize } = storeToRefs(useWindowStore())
           :height="80"
           loading="eager"
           :quality="80"
+          alt="logo"
           @click="navigateTo(menu.url)"
         />
         <NuxtLink

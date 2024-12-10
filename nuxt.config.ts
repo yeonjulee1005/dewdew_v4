@@ -169,7 +169,7 @@ export default defineNuxtConfig({
       }],
     },
     manifest: {
-      theme_color: '#41573d',
+      theme_color: '#6a64c7',
     },
     client: {
       installPrompt: true,

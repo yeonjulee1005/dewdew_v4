@@ -1,4 +1,14 @@
 export const useResumeData = () => {
+  const introTitleKo = [
+    'Software Engineer 이연주 입니다.',
+    '이동하기 버튼을 눌러 메인 페이지로 이동해보세요.',
+  ]
+
+  const introTitleEn = [
+    'Software Engineer Yeonju Lee.',
+    'Press move button to go to main page.',
+  ]
+
   const resumeKoList = [
     {
       icon: 'i-akar-icons-laptop-device',
@@ -190,6 +200,8 @@ export const useResumeData = () => {
   ]
 
   return {
+    introTitleKo,
+    introTitleEn,
     resumeKoList,
     resumeEnList,
   }

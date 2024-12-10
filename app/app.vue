@@ -100,6 +100,20 @@ useSeoMeta({
   twitterCreator: '@dewdew',
 })
 
+useAsyncData('menuData', async () => {
+  const { data } = await useFetch('/api/menuData', {
+    headers: useRequestHeaders(['cookie']),
+    immediate: true,
+  })
+
+  viewMenuData.value = data.value
+
+  return []
+}, {
+  dedupe: 'defer',
+  immediate: true,
+})
+
 watch(() => genDateFormat('HH'), () => {
   if (genDateFormat('HH').concat('00') !== forecastHour.value) {
     fetchLivingData()
@@ -131,17 +145,6 @@ const initWeatherData = () => {
   fetchWeatherData()
 }
 
-if (import.meta.server) {
-  if (!viewMenuData.value?.length) {
-    const { data } = await useFetch('/api/menuData', {
-      headers: useRequestHeaders(['cookie']),
-      immediate: true,
-    })
-
-    viewMenuData.value = data.value
-  }
-}
-
 watch(width, () => {
   if (import.meta.client) {
     windowSize.value = width.value
@@ -160,6 +163,7 @@ watch(width, () => {
         :height="5"
       />
       <NuxtPage />
+      <InstallPwa />
     </NuxtLayout>
     <SpeedInsights />
   </UApp>

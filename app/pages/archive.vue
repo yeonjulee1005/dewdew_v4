@@ -74,8 +74,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full h-fit flex items-center justify-center px-6 mt-40">
-    <div class="w-full flex flex-col gap-y-4">
+  <div class="w-full max-w-[1900px] h-fit flex items-center justify-center px-6 mt-40">
+    <div class="w-full flex flex-col gap-y-8">
       <p class="text-4xl font-bold">
         {{ $t('archives.title') }}
       </p>
@@ -102,7 +102,7 @@ onMounted(() => {
           <NuxtImg
             v-for="(item, index) in selectedArchive?.archiveList"
             :key="index"
-            class="w-80 object-cover cursor-pointer border-4 border-stone-300 dark:border-stone-700 rounded-lg hover:border-indigo-400 hover:dark:border-indigo-400/70 transition-border duration-300 ease-in-out mx-4"
+            class="w-80 h-[500px] object-cover cursor-pointer border-4 border-stone-300 dark:border-stone-700 rounded-lg hover:border-indigo-400 hover:dark:border-indigo-400/70 transition-border duration-300 ease-in-out mx-4"
             :src="item?.url ?? ''"
             width="200"
             height="200"

@@ -34,6 +34,11 @@ export default {
     dewdewWorld: 'Dewdew World',
     copyright: 'Copyright 2024 © Yeonju Lee All Rights Reserved.',
     designed: 'Designed by Yeonju Lee.',
+    uv: '자외선',
+    diffusion: '대기정체',
+    name: '이름',
+    email: '이메일',
+    message: '메시지',
   },
   menu: {
     MNC001: '메인',
@@ -62,77 +67,44 @@ export default {
   },
   main: {
     intro: {
-      largeTitle: 'FRONTEND DEVELOPER',
+      largeTitle: 'FRONTEND DEVELOPER。',
       description: [
         '노력하는 사람은 즐기는 사람을 이길 수 없습니다.',
         '개발과 취미를 즐기며 살아가는 개발자 이연주입니다.',
         '본 페이지는 \'Nuxt4(Future Version), Supabase\' 로 제작되었습니다.',
       ],
-      scroll: '👇🏻 아래로 스크롤',
     },
-    forecast: {
-      uv: '자외선',
-      diffusion: '대기정체',
+    abilities: {
+      title: '보유 기술',
+      contribution: '기여',
+      language: '언어 / 프레임워크 / 라이브러리',
+      tools: '도구 / 워크스페이스 / 분석',
+      nice: '능숙하게 사용할 수 있어요.',
+      well: '어느정도 사용할 수 있어요.',
+      use: '사용 해봤어요',
     },
     resume: {
-      name: [
-        'Software Engineer 이연주',
-        'A.K.A Dewdew',
-      ],
-    },
-    skills: {
-      frontDescription: {
+      description: {
         title: [
           '안녕하세요.',
-          'Software 엔지니어 이연주 입니다.',
+          'Software Engineer 이연주 입니다.',
         ],
-        first: [
-          '화려한 삶은 아니지만,',
-          '한번뿐인 인생에서 즐겁게 일하며 새로운 것들을',
-          '경험하고 성장하고 있는 개발자 입니다.',
-        ],
-        second: [
-          '매일마다 새로운 기술스택이 나오고 있습니다.',
-          '최신 기술스택에 대한 저항없이 학습하고 사용해보며,',
-          '능률적으로 서비스를 만드는 것이 중요하다고 생각합니다.',
-        ],
-        third: [
-          '비전공이지만, 그래도 그만큼 더 열심히 배우고 노력하는',
-          '개발자로 성장해 가고 있습니다.',
-        ],
-      },
-      backDescription: {
-        title: [
-          '코어 스택',
-        ],
-        first: [
-          'FE: Nuxt4(Future Version), Astro',
-          'BE: Supabase',
-          'UI: Nuxt UI, Element Plus',
-        ],
-        second: [
-          'Modules: Pinia, Nuxt-img, Nuxt-content, Nuxt-i18n',
-          'vite-pwa, Vueuse, Tiptap, Etc',
-        ],
-        third: [
-          'Language: JavaScript, TypeScript, Swift, Kotlin',
-          'Style: Tailwind-CSS, SCSS',
-          'Design: Figma',
+        description: [
+          '화려한 삶은 아니지만, 한번뿐인 인생에서 즐겁게 일하며 새로운 것들을 경험하고 성장하고 있습니다.',
+          '지금도 매일같이 새로운 기술이 개발되고 있습니다. 최신 기술에 대해 저항없이 학습하고 사용해보며, 최적의 기술을 선택하여 서비스를 만드는 것이 중요하다고 생각합니다.',
+          '개발전공은 아니지만, 그만큼 더 열심히 배우고 노력하는 개발자로 성장해 가고 있습니다.',
         ],
       },
     },
-    reference: {
+    portfolio: {
       title: '프로젝트',
       description: '개발 포트폴리오 리스트 입니다.',
       moveTo: '보러가기',
       background: 'PROJECTS',
     },
     contact: 'CONTACT',
-    social: 'Social Contact',
-    kakao: {
-      title: 'Kakao Talk',
-      contact: '카카오톡으로 연락하기',
-    },
+    kakao: '카카오톡으로 연락하기',
+    linkedin: 'Linkedin으로 연락하기',
     email: 'Email',
   },
   colorsTranslate: {
@@ -254,7 +226,7 @@ export default {
   },
   messages: {
     leavePage: '페이지를 이탈하셨네요.',
-    leavePageDesc: '재사용 하지 않으면, 60초 후 화면이 닫혀요.',
+    leavePageDesc: '재사용 하지 않으면, 30초 후 메인페이지로 이동해요.',
     moveToMain: '메인페이지로 이동되었어요 :)',
     emailRequire: '이메일을 입력해주세요.',
     emailFormat: '이메일 형식이 올바르지 않아요.',

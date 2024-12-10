@@ -23,6 +23,7 @@ withDefaults(
     imageClass?: string
     buttonText?: string
     buttonAvatar?: AvatarProps
+    alt?: string
   }>(),
   {
     customClass: 'cursor-pointer',
@@ -46,6 +47,7 @@ withDefaults(
     imageUrl: '',
     imageClass: 'w-8 h-8',
     buttonText: '',
+    alt: 'button',
     buttonAvatar: undefined,
   },
 )
@@ -65,7 +67,7 @@ withDefaults(
     :type="buttonType"
     :variant="buttonVariant"
     :label="buttonText"
-    :aria-label="buttonText"
+    :aria-label="alt"
   >
     <template
       v-if="useLeading"

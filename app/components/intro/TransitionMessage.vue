@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { helloList } from '~/data/hello'
+const helloList = useHelloList()
 
 const state = reactive({
   currentHelloIndex: 0,
@@ -9,8 +9,8 @@ const state = reactive({
 let timeoutId: number | undefined
 
 const updateHello = () => {
-  state.currentHelloIndex = (state.currentHelloIndex + 1) % helloList.length
-  timeoutId = window.setTimeout(updateHello, 5000)
+  state.currentHelloIndex = Math.floor(Math.random() * helloList.length)
+  timeoutId = window.setTimeout(updateHello, 3000)
 }
 
 watch(() => state.currentHelloIndex, (newIndex) => {

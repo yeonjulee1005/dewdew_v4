@@ -61,7 +61,7 @@ const countDisplay = (index: number, _count: number): void => {
       <div class="flex flex-col justify-center items-center">
         <UProgress
           v-model="count"
-          :max="60"
+          :max="30"
           size="xl"
           animation="elastic"
         />

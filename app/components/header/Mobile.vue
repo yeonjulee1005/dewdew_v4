@@ -13,7 +13,7 @@ const slideoverTrigger = ref(false)
 <template>
   <div
     v-if="windowSize <= 768"
-    class="fixed top-0 w-dvw h-fit flex items-center justify-center bg-neutral-800/5 dark:bg-neutral-100/5 z-20"
+    class="fixed top-0 w-dvw h-fit flex items-center justify-center bg-neutral-800/15 dark:bg-neutral-100/40 z-20"
   >
     <div class="w-full h-fit flex items-center justify-between gap-x-9 px-6 py-4">
       <NuxtImg

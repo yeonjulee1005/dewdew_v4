@@ -57,12 +57,6 @@ useHead({
       type: 'module',
       defer: true,
     },
-    {
-      hid: 'typeit',
-      src: 'https://unpkg.com/typeit@8.7.1/dist/index.umd.js',
-      type: 'module',
-      defer: true,
-    },
   ],
 })
 

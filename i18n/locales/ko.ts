@@ -59,12 +59,6 @@ export default {
     SMC009: 'Instagram',
     SMC010: 'Youtube',
   },
-  intro: {
-    title: [
-      'Software Engineer 이연주 입니다.',
-      '이동하기 버튼을 눌러 메인 페이지로 이동해보세요.',
-    ],
-  },
   main: {
     intro: {
       largeTitle: 'FRONTEND DEVELOPER。',

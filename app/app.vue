@@ -159,7 +159,7 @@ watch(width, () => {
     <VitePwaManifest />
     <NuxtLayout>
       <NuxtLoadingIndicator
-        color="repeating-linear-gradient(to right,#feeae2 0%,#41573D 100%)"
+        color="repeating-linear-gradient(to right,#f1f4fc 0%,#6a64c7 100%)"
         :height="5"
       />
       <NuxtPage />
@@ -175,17 +175,17 @@ watch(width, () => {
 @theme {
   --font-family-sans: 'Pretendard Variable', Pretendard, Roboto, -apple-system, BlinkMacSystemFont, 'SUIT Variable', system-ui, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 
-  /* --color-amber-50: #fef5f2;
-  --color-amber-100: #feeae2;
-  --color-amber-200: #fed8ca;
-  --color-amber-300: #fdc6b1;
-  --color-amber-400: #f99670;
-  --color-amber-500: #f07343;
-  --color-amber-600: #dd5825;
-  --color-amber-700: #ba471b;
-  --color-amber-800: #9a3d1a;
-  --color-amber-900: #80381c;
-  --color-amber-950: #451a0a; */
+  --color-indigo-50: #f1f4fc;
+  --color-indigo-100: #e6eaf9;
+  --color-indigo-200: #d2d8f3;
+  --color-indigo-300: #b6bfeb;
+  --color-indigo-400: #989fe1;
+  --color-indigo-500: #8b8dda;
+  --color-indigo-600: #6a64c7;
+  --color-indigo-700: #5b54ae;
+  --color-indigo-800: #4a468d;
+  --color-indigo-900: #403e71;
+  --color-indigo-950: #262442;
 }
 
 .break-keep {

@@ -59,12 +59,6 @@ export default {
     SMC009: 'Instagram',
     SMC010: 'Youtube',
   },
-  intro: {
-    title: [
-      'Software Engineer Yeonju Lee.',
-      'Press move button to go to main page.',
-    ],
-  },
   main: {
     intro: {
       largeTitle: 'FRONTEND DEVELOPER。',

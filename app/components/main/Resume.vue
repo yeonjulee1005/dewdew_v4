@@ -24,6 +24,7 @@ const { resumeKoList, resumeEnList } = useResumeData()
             loading="lazy"
             fit="cover"
             alt="dewdew"
+            sizes="(max-width: 600px) 50vw, 25vw"
             :draggable="false"
             @contextmenu.prevent
           />

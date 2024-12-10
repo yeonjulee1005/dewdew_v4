@@ -101,6 +101,7 @@ defineEmits([
           v-if="imageUrl"
           :src="imageUrl"
           :width="imageSize"
+          alt="image"
         />
       </template>
       <template

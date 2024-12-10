@@ -21,7 +21,7 @@ const { data: portfolioData } = await useAsyncData('portfolioData', async () => 
 </script>
 
 <template>
-  <div class="w-full flex flex-col items-center mt-34">
+  <div class="w-full flex flex-col items-center mt-23 md:mt-31">
     <MainBanner />
     <MainResume />
     <MainAbilities />

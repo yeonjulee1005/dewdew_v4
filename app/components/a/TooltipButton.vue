@@ -26,6 +26,7 @@ withDefaults(
     imageSize?: number
     buttonText?: string
     buttonAvatar?: AvatarProps
+    alt?: string
   }>(),
   {
     customClass: '',
@@ -51,6 +52,7 @@ withDefaults(
     imageSize: 30,
     buttonText: '',
     buttonAvatar: undefined,
+    alt: 'button',
   },
 )
 
@@ -85,7 +87,7 @@ defineEmits([
       :type="buttonType"
       :variant="buttonVariant"
       :label="buttonText"
-      :aria-label="buttonText"
+      :aria-label="alt"
       @click="$emit('click:button')"
     >
       <template

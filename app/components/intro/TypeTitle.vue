@@ -12,18 +12,16 @@ const translatedTitleList = _titleList.map((title: { loc: { source: string } }) 
 const helloIntroTitle = ref<HTMLElement | null>(null)
 
 const typeItHello = () => {
-  if (import.meta.client) {
-    new TypeIt(helloIntroTitle.value, {
-      strings: translatedTitleList,
-      lifeLike: true,
-      speed: 50,
-      deleteSpeed: 30,
-      loop: true,
-    }).go()
-  }
+  new TypeIt(helloIntroTitle.value, {
+    strings: translatedTitleList,
+    lifeLike: true,
+    speed: 50,
+    deleteSpeed: 30,
+    loop: true,
+  }).go()
 }
 
-onMounted(() => {
+onNuxtReady(() => {
   typeItHello()
 })
 </script>

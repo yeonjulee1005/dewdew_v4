@@ -4,14 +4,15 @@
     "name": "Dewdew",
     "email": "yeonju.lee1005@gmail.com"
   },
-  "version": "3.4.0",
+  "version": "3.5.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port 4500",
     "dev:host": "nuxt dev --port 4500 --host",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "preview": "nuxt preview --port 4500",
+    "prepare": "nuxt prepare",
     "analyze": "nuxt analyze",
     "postinstall": "nuxt prepare",
     "cleanup": "nuxt cleanup",

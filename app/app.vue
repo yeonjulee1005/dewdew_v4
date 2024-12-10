@@ -6,7 +6,7 @@ const { coords, resume } = useGeolocation()
 const { width } = useWindowSize()
 const { userAgent } = useDevice()
 const appConfig = useAppConfig()
-const { meta } = useRoute()
+const { meta, path } = useRoute()
 
 const { t } = useCustomLocale()
 
@@ -23,7 +23,7 @@ const { dfsXyConvert } = useTranslateCoords()
 
 const seoTitle = 'Dewdew | Software Engineer 이연주'
 const seoDescription = 'Dewdew는 소프트웨어 엔지니어 이연주의 웹페이지 입니다. 주로 프론트엔드 개발(Nuxt3)에 관심이 있습니다.'
-const seoUrl = 'https://www.dewdew.dev'
+const seoUrl = `https://www.dewdew.dev${path}`
 const seoImage = 'https://api.dewdew.dev/storage/v1/object/public/assets/banner/main_banner.webp'
 
 useHead({
@@ -79,12 +79,12 @@ if (!userAgent.includes('APP_Dewdew')) {
 useSeoMeta({
   charset: 'utf-16',
   formatDetection: 'telephone=no',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
+  viewport: 'width=device-width, initial-scale=1',
   title: (meta.title as string) || seoTitle,
   author: 'Dewdew',
   description: (meta.description as string) || seoDescription,
-  themeColor: '#41573d',
-  msapplicationTileColor: '#41573d',
+  themeColor: '#6a64c7',
+  msapplicationTileColor: '#6a64c7',
   ogTitle: (meta.title as string) || seoTitle,
   ogDescription: (meta.description as string) || seoDescription,
   ogImage: seoImage,
@@ -180,12 +180,12 @@ watch(width, () => {
   --color-indigo-200: #d2d8f3;
   --color-indigo-300: #b6bfeb;
   --color-indigo-400: #989fe1;
-  --color-indigo-500: #8b8dda;
-  --color-indigo-600: #6a64c7;
-  --color-indigo-700: #5b54ae;
-  --color-indigo-800: #4a468d;
-  --color-indigo-900: #403e71;
-  --color-indigo-950: #262442;
+  --color-indigo-500: #6a64c7;
+  --color-indigo-600: #5b54ae;
+  --color-indigo-700: #4a468d;
+  --color-indigo-800: #403e71;
+  --color-indigo-900: #262442;
+  --color-indigo-950: #1a1a2e;
 }
 
 .break-keep {

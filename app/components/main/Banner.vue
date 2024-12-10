@@ -14,13 +14,15 @@ const { url } = useImageStorage()
       height="100%"
       format="webp"
       fit="cover"
+      sizes="(max-width: 600px) 100vw, 50vw"
+      loading="lazy"
       :alt="$t('pageTitle.main')"
       :draggable="false"
       @contextmenu.prevent
     />
     <UCard
       :ui="{
-        root: 'relative sm:absolute sm:w-[360px] md:w-fit bg-transparent bg-gradient-to-bl from-fuchsia-400/30 via-indigo-400/30 to-sky-400/30 ring-2 ring-indigo-400/30 divide-indigo-400/30 sm:top-22 sm:left-16 mt-20 mx-6 sm:mx-0 sm:mt-0',
+        root: 'relative sm:absolute sm:w-[360px] md:w-fit bg-transparent bg-gradient-to-bl from-fuchsia-400/30 via-indigo-400/30 to-sky-400/30 ring-2 ring-indigo-400 divide-indigo-400 sm:top-22 sm:left-16 mt-20 mx-6 sm:mx-0 sm:mt-0',
       }"
     >
       <template #default>

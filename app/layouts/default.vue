@@ -8,7 +8,6 @@
     <div class="w-dvw lg:w-[900px]">
       <FooterGroup />
     </div>
-    <InstallPwa />
     <ModalLeaveCounter />
   </div>
 </template>

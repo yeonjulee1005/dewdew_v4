@@ -8,6 +8,14 @@ const { url } = useImageStorage()
 const { viewMenuData } = storeToRefs(useMenuStore())
 
 const slideoverTrigger = ref(false)
+
+const moveToNavigation = (url: string, isExternal: boolean) => {
+  isExternal
+    ? navigateTo(url, { external: true, open: { target: '_blank' } })
+    : navigateTo(url)
+
+  slideoverTrigger.value = false
+}
 </script>
 
 <template>
@@ -26,7 +34,7 @@ const slideoverTrigger = ref(false)
         loading="eager"
         :quality="80"
         alt="logo"
-        @click="navigateTo('/')"
+        @click="moveToNavigation('/', false)"
       />
       <USlideover
         v-model:open="slideoverTrigger"
@@ -59,7 +67,7 @@ const slideoverTrigger = ref(false)
               loading="eager"
               :quality="80"
               alt="logo"
-              @click="navigateTo('/main')"
+              @click="moveToNavigation('/main', false)"
             />
             <AButton
               button-variant="subtle"
@@ -90,7 +98,7 @@ const slideoverTrigger = ref(false)
                 button-label-class="text-xl font-bold truncate"
                 :tooltip-text="$t(`menu.${menu.code}`)"
                 :button-text="$t(`menu.${menu.code}`)"
-                @click="navigateTo(menu.url ?? '')"
+                @click:button="moveToNavigation(menu.url ?? '', false)"
               />
             </div>
             <USeparator />
@@ -106,7 +114,7 @@ const slideoverTrigger = ref(false)
                   use-leading
                   :icon-lead-name="subMenu.icon ?? ''"
                   icon-lead-class="w-8 h-8"
-                  @click="navigateTo(subMenu.url ?? '', { external: true, open: { target: '_blank' } })"
+                  @click="moveToNavigation(subMenu.url ?? '', true)"
                 />
               </div>
               <AThemeChange

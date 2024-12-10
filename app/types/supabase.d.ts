@@ -9,6 +9,44 @@ type Json =
 interface Database {
   public: {
     Tables: {
+      archiveCategory: {
+        Row: {
+          created_at: string
+          deleted: boolean | null
+          id: string
+          index: number | null
+          title: string | null
+          update_user_id: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string
+          deleted?: boolean | null
+          id?: string
+          index?: number | null
+          title?: string | null
+          update_user_id?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string
+          deleted?: boolean | null
+          id?: string
+          index?: number | null
+          title?: string | null
+          update_user_id?: string | null
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: 'archiveCategory_update_user_id_fkey'
+            columns: ['update_user_id']
+            isOneToOne: false
+            referencedRelation: 'profiles'
+            referencedColumns: ['id']
+          },
+        ]
+      }
       archiveGroup: {
         Row: {
           archive_id: string
@@ -130,6 +168,61 @@ interface Database {
         Relationships: [
           {
             foreignKeyName: 'archiveIndex_update_user_id_fkey'
+            columns: ['update_user_id']
+            isOneToOne: false
+            referencedRelation: 'profiles'
+            referencedColumns: ['id']
+          },
+        ]
+      }
+      archiveList: {
+        Row: {
+          archive_category_id: string | null
+          created_at: string
+          deleted: boolean | null
+          id: string
+          title: string | null
+          update_user_id: string | null
+          updated_at: string | null
+          url: string | null
+        }
+        Insert: {
+          archive_category_id?: string | null
+          created_at?: string
+          deleted?: boolean | null
+          id?: string
+          title?: string | null
+          update_user_id?: string | null
+          updated_at?: string | null
+          url?: string | null
+        }
+        Update: {
+          archive_category_id?: string | null
+          created_at?: string
+          deleted?: boolean | null
+          id?: string
+          title?: string | null
+          update_user_id?: string | null
+          updated_at?: string | null
+          url?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: 'archiveList_archive_category_id_fkey'
+            columns: ['archive_category_id']
+            isOneToOne: false
+            referencedRelation: 'archiveCategory'
+            referencedColumns: ['id']
+          },
+          {
+            foreignKeyName: 'archiveList_archive_category_id_fkey'
+            columns: ['archive_category_id']
+            isOneToOne: false
+            referencedRelation: 'viewArchive'
+            referencedColumns: ['id']
+          },
+          {
+            foreignKeyName: 'archiveList_update_user_id_fkey'
             columns: ['update_user_id']
             isOneToOne: false
             referencedRelation: 'profiles'
@@ -583,7 +676,27 @@ interface Database {
       }
     }
     Views: {
-      [_ in never]: never
+      viewArchive: {
+        Row: {
+          archiveList: Json | null
+          created_at: string | null
+          deleted: boolean | null
+          id: string | null
+          index: number | null
+          title: string | null
+          update_user_id: string | null
+          updated_at: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: 'archiveCategory_update_user_id_fkey'
+            columns: ['update_user_id']
+            isOneToOne: false
+            referencedRelation: 'profiles'
+            referencedColumns: ['id']
+          },
+        ]
+      }
     }
     Functions: {
       [_ in never]: never

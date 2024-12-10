@@ -74,6 +74,9 @@ export default defineNuxtConfig({
       dataPortalApiKey: process.env.DATA_PORTAL_API_KEY,
     },
   },
+  routeRules: {
+    '/main': { prerender: true },
+  },
   sourcemap: {
     server: true,
     client: true,

@@ -1,6 +1,19 @@
 <script setup lang="ts">
 import type { MenuDatabase } from '~/types/supabase-menu'
 
+const { t } = useLocale()
+const { path } = useRoute()
+
+useHead({
+  title: t('pageTitle.project'),
+  meta: [
+    { property: 'description', content: t('openGraph.project') },
+    { property: 'og:title', content: t('pageTitle.project') },
+    { property: 'og:description', content: t('openGraph.project') },
+    { property: 'og:url', content: `https://www.dewdew.dev${path}` },
+  ],
+})
+
 const { viewMenuData } = storeToRefs(useMenuStore())
 
 const projectList = viewMenuData.value?.[1]?.subMenuList as MenuDatabase['menu']['Tables']['subMenu']['Row'][]

@@ -20,7 +20,7 @@ withDefaults(
     iconTrailName?: string
     iconTrailClass?: string
     imageUrl?: string
-    imageSize?: number
+    imageClass?: string
     buttonText?: string
     buttonAvatar?: AvatarProps
   }>(),
@@ -44,7 +44,7 @@ withDefaults(
     iconTrailName: '',
     iconTrailClass: 'w-8 h-8',
     imageUrl: '',
-    imageSize: 30,
+    imageClass: 'w-8 h-8',
     buttonText: '',
     buttonAvatar: undefined,
   },
@@ -78,8 +78,8 @@ withDefaults(
       />
       <NuxtImg
         v-if="imageUrl"
+        :class="imageClass"
         :src="imageUrl"
-        :width="imageSize"
       />
     </template>
     <template

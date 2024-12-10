@@ -6,7 +6,7 @@ export default {
     portfolio: 'Portfolio',
     project: 'Project',
     blog: 'Blog',
-    archives: 'Archives',
+    archive: 'Archives',
     colorsTranslate: 'Find my colors!',
   },
   pageSubTitle: {
@@ -20,7 +20,7 @@ export default {
     colorsTranslate: 'Find the forgotten color codes.',
     hhkb: 'This is HHKB keyboard modeling using Three.js.',
     blog: 'This is the blog of FE Developer Yeonju Lee.',
-    archives: 'This is the photo record of FE Developer Yeonju Lee.',
+    archive: 'This is the photo record of FE Developer Yeonju Lee.',
   },
   button: {
     moveMain: 'Move',
@@ -34,6 +34,11 @@ export default {
     dewdewWorld: 'Dewdew World',
     copyright: 'Copyright 2024 © Yeonju Lee All Rights Reserved.',
     designed: 'Designed by Yeonju Lee.',
+    uv: 'UV',
+    diffusion: 'Diffusion',
+    name: 'Name',
+    email: 'Email',
+    message: 'Message',
   },
   menu: {
     MNC001: 'Main',
@@ -62,77 +67,44 @@ export default {
   },
   main: {
     intro: {
-      largeTitle: 'FRONTEND DEVELOPER',
+      largeTitle: 'FRONTEND DEVELOPER。',
       description: [
         'The person who works hard cannot beat the person who enjoys.',
         'I am a developer who enjoys development and hobbies.',
         'This page is made with \'Nuxt4(Future Version), Supabase\'.',
       ],
-      scroll: '👇🏻 Scroll down',
     },
-    forecast: {
-      uv: 'UV',
-      diffusion: 'Diffusion',
+    abilities: {
+      title: 'Skill Abilities',
+      contribution: 'Contribution',
+      language: 'Language / Framework / Library',
+      tools: 'Tools / Workspace / Analytics',
+      nice: 'Can use it well.',
+      well: 'Can use it to some extent.',
+      use: 'I have used it.',
     },
     resume: {
-      name: [
-        'Software Engineer Yeonju Lee',
-        'A.K.A Dewdew',
-      ],
-    },
-    skills: {
-      frontDescription: {
+      description: {
         title: [
           'Hello.',
           'I am Software Engineer Yeonju Lee.',
         ],
-        first: [
-          'Not glamorous life,',
-          'I enjoy working and experiencing new things in one life.',
-          'I am a developer who is growing and growing.',
-        ],
-        second: [
-          'Every day, new technology stacks are coming out.',
-          'I learn and use them without resistance to the latest technology stacks,',
-          'I think it is important to make services efficiently.',
-        ],
-        third: [
-          'Not a major, but I study and work harder than anyone else.',
-          'I am growing to be a developer.',
-        ],
-      },
-      backDescription: {
-        title: [
-          'Core Stack',
-        ],
-        first: [
-          'FE: Nuxt4(Future Version), Astro',
-          'BE: Supabase',
-          'UI: Nuxt UI, Element Plus',
-        ],
-        second: [
-          'Modules: Pinia, Nuxt-img, Nuxt-content, Nuxt-i18n',
-          'vite-pwa, Vueuse, Tiptap, Etc',
-        ],
-        third: [
-          'Language: JavaScript, TypeScript, Swift, Kotlin',
-          'Style: Tailwind-CSS, SCSS',
-          'Design: Figma',
+        description: [
+          'It may not be a glamorous life, but I am growing and experiencing new things while working joyfully in this one and only life.',
+          'New technologies are being developed every day. I believe it is important to learn and use the latest technologies without resistance and to choose the optimal technology to create services.',
+          'Although I did not major in development, I am growing as a developer by learning and working harder.',
         ],
       },
     },
-    reference: {
+    portfolio: {
       title: 'Project',
       description: 'This is the list of development portfolio.',
       moveTo: 'Go to',
       background: 'PROJECTS',
     },
     contact: 'CONTACT',
-    social: 'Social Contact',
-    kakao: {
-      title: 'Kakao Talk',
-      contact: 'Contact via Kakao Talk',
-    },
+    kakao: 'Contact via Kakao Talk',
+    linkedin: 'Contact via Linkedin',
     email: 'Email',
   },
   colorsTranslate: {
@@ -254,7 +226,7 @@ export default {
   },
   messages: {
     leavePage: 'You left the page.',
-    leavePageDesc: 'If you do not use it again, the screen will close after 60 seconds.',
+    leavePageDesc: 'If not reused, you will be redirected to the main page in 30 seconds.',
     moveToMain: 'You have been moved to the main page :)',
     emailRequire: 'Please enter your email.',
     emailFormat: 'The email format is incorrect.',

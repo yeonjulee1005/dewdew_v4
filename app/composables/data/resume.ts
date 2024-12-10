@@ -1,21 +1,33 @@
 export const useResumeData = () => {
   const resumeKoList = [
     {
-      icon: 'i-heroicons-academic-cap',
+      icon: 'i-akar-icons-laptop-device',
       label: '학력',
       slot: 'educate',
       description: '[2006.03 ~ 2013.02] 경희대학교(서울) 물리학과 학사 졸업',
     },
     {
-      icon: 'i-heroicons-building-office',
-      label: '[2024.02 ~ Current] 이구구',
+      icon: 'i-akar-icons-jar',
+      label: '[2024.07 ~ Current] 굿노드주식회사',
       slot: 'career',
       description: [
-        'CTO / Co-Founder',
+        'CTO',
+        'Wheels & Meets 서비스 개발총괄 (Nuxt3, Supabase, AWS)',
+        '굿노드 주식회사 웹사이트 개발 (Nuxt3, Supabase)',
+        '워크스페이스 관리',
       ],
     },
     {
-      icon: 'i-heroicons-building-office',
+      icon: 'i-akar-icons-jar',
+      label: '[2024.02 ~ 2024.05] 이구구',
+      slot: 'career',
+      description: [
+        'CTO',
+        '두람쥐 서비스 상용화 개발 총괄',
+      ],
+    },
+    {
+      icon: 'i-akar-icons-jar',
       label: '[2022.04 ~ 2024.02] 가제트코리아',
       slot: 'career',
       description: [
@@ -29,7 +41,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-library',
+      icon: 'i-akar-icons-jar',
       label: '[2021.09 ~ 2022.4] 아브로소프트코리아',
       slot: 'career',
       description: [
@@ -40,7 +52,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-office-2',
+      icon: 'i-akar-icons-jar',
       label: '[2020.08 ~ 2021.9] 두원',
       slot: 'career',
       description: [
@@ -51,7 +63,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-storefront',
+      icon: 'i-akar-icons-jar',
       label: '[2018.07 ~ 2021.9] 비트로드',
       slot: 'career',
       description: [
@@ -61,7 +73,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-office',
+      icon: 'i-akar-icons-jar',
       label: '[2017.04 ~ 2017.6] 인베니아',
       slot: 'career',
       description: [
@@ -71,7 +83,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-library',
+      icon: 'i-akar-icons-jar',
       label: '[2016.01 ~ 2017.1] 베가',
       slot: 'career',
       description: [
@@ -84,13 +96,33 @@ export const useResumeData = () => {
 
   const resumeEnList = [
     {
-      icon: 'i-heroicons-academic-cap',
+      icon: 'i-akar-icons-laptop-device',
       label: 'Education',
       slot: 'educate',
       description: '[2006.03 ~ 2013.02] Graduated with a Bachelor degree in Physics from Kyung Hee University (Seoul)',
     },
     {
-      icon: 'i-heroicons-building-office',
+      icon: 'i-akar-icons-jar',
+      label: '[2024.07 ~ Current] Good Nodes Co., Ltd.',
+      slot: 'career',
+      description: [
+        'CTO',
+        'Wheels & Meets service development (Nuxt3, Supabase, AWS)',
+        'Good Nodes Co., Ltd. website development (Nuxt3, Supabase)',
+        'Workspace management',
+      ],
+    },
+    {
+      icon: 'i-akar-icons-jar',
+      label: '[2024.02 ~ 2024.05] Egugu',
+      slot: 'career',
+      description: [
+        'CTO',
+        'Doolamoo service commercialization development (Nuxt3, Supabase, AWS)',
+      ],
+    },
+    {
+      icon: 'i-akar-icons-jar',
       label: '[2022.04 ~ Current] Gadget Korea',
       slot: 'career',
       description: [
@@ -104,7 +136,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-library',
+      icon: 'i-akar-icons-jar',
       label: '[2021.09 ~ 2022.4] Avrosoft Korea',
       slot: 'career',
       description: [
@@ -115,7 +147,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-office-2',
+      icon: 'i-akar-icons-jar',
       label: '[2020.08 ~ 2021.9] Doowon',
       slot: 'career',
       description: [
@@ -126,7 +158,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-storefront',
+      icon: 'i-akar-icons-jar',
       label: '[2018.07 ~ 2021.9] Beatroad',
       slot: 'career',
       description: [
@@ -136,7 +168,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-office',
+      icon: 'i-akar-icons-jar',
       label: '[2017.04 ~ 2017.6] Invenia',
       slot: 'career',
       description: [
@@ -146,7 +178,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-heroicons-building-library',
+      icon: 'i-akar-icons-jar',
       label: '[2016.01 ~ 2017.1] Bega',
       slot: 'career',
       description: [

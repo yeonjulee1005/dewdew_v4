@@ -181,6 +181,7 @@ initColorData()
       >
         <AInput
           v-model:input-value="formData.hexColor"
+          use-copy
           @copy:color="copyColor"
         />
       </UFormField>
@@ -192,6 +193,7 @@ initColorData()
         <AInput
           v-model:input-value="formData.rgbColor"
           input-disabled
+          use-copy
           @copy:color="copyColor"
         />
       </UFormField>
@@ -203,6 +205,7 @@ initColorData()
         <AInput
           v-model:input-value="formData.hslColor"
           input-disabled
+          use-copy
           @copy:color="copyColor"
         />
       </UFormField>
@@ -214,6 +217,7 @@ initColorData()
         <AInput
           v-model:input-value="formData.cmykColor"
           input-disabled
+          use-copy
           @copy:color="copyColor"
         />
       </UFormField>

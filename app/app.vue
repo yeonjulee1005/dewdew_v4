@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/vue'
+
 const { coords, resume } = useGeolocation()
 
 const { width } = useWindowSize()
@@ -159,6 +161,7 @@ watch(width, () => {
       />
       <NuxtPage />
     </NuxtLayout>
+    <SpeedInsights />
   </UApp>
 </template>
 

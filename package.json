@@ -11,8 +11,7 @@
     "dev": "nuxt dev --port 4500",
     "dev:host": "nuxt dev --port 4500 --host",
     "generate": "nuxt generate",
-    "preview": "nuxt preview --port 4500",
-    "prepare": "nuxt prepare",
+    "preview": "nuxt preview",
     "analyze": "nuxt analyze",
     "postinstall": "nuxt prepare",
     "cleanup": "nuxt cleanup",
@@ -47,7 +46,7 @@
     "@nuxt/ui": "3.0.0-alpha.9",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/device": "^3.2.4",
-    "@nuxtjs/i18n": "^9.1.0",
+    "@nuxtjs/i18n": "^9.1.1",
     "@nuxtjs/stylelint-module": "^5.2.0",
     "@nuxtjs/supabase": "^1.4.3",
     "@pinia/nuxt": "^0.8.0",
@@ -72,5 +71,8 @@
     "vite-plugin-eslint2": "^5.0.3",
     "vue-dompurify-html": "^5.2.0",
     "yup": "^1.4.0"
+  },
+  "overrides": {
+    "@jridgewell/gen-mapping": "0.3.5"
   }
 }

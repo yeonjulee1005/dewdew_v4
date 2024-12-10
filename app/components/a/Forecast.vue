@@ -43,7 +43,7 @@ const option = {
         />
         <AIconText
           :use-icon="false"
-          :text="$t('main.forecast.uv')"
+          :text="$t('texts.uv')"
         />
         <AIconText
           :custom-class="uvColor(uvData.uvIndex)"
@@ -67,7 +67,7 @@ const option = {
         />
         <AIconText
           :use-icon="false"
-          :text="$t('main.forecast.diffusion')"
+          :text="$t('texts.diffusion')"
         />
         <AIconText
           :custom-class="airDiffusionColor(airDiffusionData.diffusionIndex)"

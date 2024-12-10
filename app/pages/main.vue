@@ -5,15 +5,27 @@ useHead({
   title: t('pageTitle.main'),
 })
 
-definePageMeta({
-  layout: 'default',
+const { data: portfolioData } = await useAsyncData('portfolioData', async () => {
+  const { data } = await useFetch('/api/portfolio', {
+    headers: useRequestHeaders(['cookie']),
+    immediate: true,
+  })
+
+  return data.value
+    ? data.value
+    : []
+}, {
+  dedupe: 'defer',
+  immediate: true,
 })
 </script>
 
 <template>
-  <div class="w-full h-[2000px] flex items-center justify-center border-2 border-red-500 mt-40">
-    <h1>
-      Main
-    </h1>
+  <div class="w-full flex flex-col items-center mt-34">
+    <MainBanner />
+    <MainResume />
+    <MainAbilities />
+    <MainPortfolio v-model:main-portfolio-data="portfolioData" />
+    <MainContact />
   </div>
 </template>

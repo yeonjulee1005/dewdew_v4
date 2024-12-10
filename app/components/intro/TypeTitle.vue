@@ -1,26 +1,20 @@
 <script setup lang="ts">
 import TypeIt from 'typeit'
 
-const { tm } = useCustomLocale()
+const { locale } = useCustomLocale()
 
-const _titleList: { loc: { source: string } }[] = tm('intro.title')
-
-const translatedTitleList = _titleList.map((title: { loc: { source: string } }) => {
-  return title.loc.source
-})
+const { introTitleKo, introTitleEn } = useResumeData()
 
 const helloIntroTitle = ref<HTMLElement | null>(null)
 
 const typeItHello = () => {
-  if (import.meta.client) {
-    new TypeIt(helloIntroTitle.value, {
-      strings: translatedTitleList,
-      lifeLike: true,
-      speed: 50,
-      deleteSpeed: 30,
-      loop: true,
-    }).go()
-  }
+  new TypeIt(helloIntroTitle.value, {
+    strings: locale.value === 'ko' ? introTitleKo : introTitleEn,
+    lifeLike: true,
+    speed: 50,
+    deleteSpeed: 30,
+    loop: true,
+  }).go()
 }
 
 onMounted(() => {

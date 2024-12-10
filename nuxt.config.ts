@@ -75,6 +75,7 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
+    '/': { prerender: true },
     '/main': { prerender: true },
   },
   sourcemap: {

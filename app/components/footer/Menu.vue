@@ -15,7 +15,7 @@ const { viewMenuData } = storeToRefs(useMenuStore())
       button-color="neutral"
       :tooltip-text="$t(`menu.${menu.code}`)"
       :button-text="$t(`menu.${menu.code}`)"
-      @click="navigateTo(menu.url ?? '')"
+      @click:button="navigateTo(menu.url ?? '')"
     />
   </div>
 </template>

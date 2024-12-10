@@ -59,7 +59,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full h-fit flex flex-col items-center justify-center gap-y-6 px-6 mt-40">
+  <div class="w-full max-w-[1900px] h-fit flex flex-col items-center justify-center gap-y-6 px-6 mt-40">
     <ClientOnly>
       <Flicking
         :options="option"

@@ -216,6 +216,7 @@ export const useUi = () => {
 
   return {
     hyperLinkRegex,
+    emailRegex,
     youtubeRegex,
     passwordRegex,
     splitByChar,

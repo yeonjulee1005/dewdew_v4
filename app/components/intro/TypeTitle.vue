@@ -21,7 +21,8 @@ const typeItHello = () => {
   }).go()
 }
 
-onNuxtReady(() => {
+onNuxtReady(async () => {
+  await nextTick()
   typeItHello()
 })
 </script>

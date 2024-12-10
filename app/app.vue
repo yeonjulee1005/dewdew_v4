@@ -50,14 +50,6 @@ useHead({
     { name: 'naver-site-verification', content: '7c406de71b03c1e444a4fe2630a29bd7a8e17559' },
     { property: 'imagetoolbar', content: 'no' },
   ],
-  script: [
-    {
-      hid: 'spiine-viewer',
-      src: 'https://unpkg.com/@splinetool/viewer@1.0.17/build/spline-viewer.js',
-      type: 'module',
-      defer: true,
-    },
-  ],
 })
 
 if (!userAgent.includes('APP_Dewdew')) {
@@ -100,7 +92,7 @@ useSeoMeta({
   twitterCreator: '@dewdew',
 })
 
-useAsyncData('menuData', async () => {
+const { execute: executeMenuData } = useAsyncData('menuData', async () => {
   const { data } = await useFetch('/api/menuData', {
     headers: useRequestHeaders(['cookie']),
     immediate: true,
@@ -113,6 +105,10 @@ useAsyncData('menuData', async () => {
   dedupe: 'defer',
   immediate: true,
 })
+
+if (!viewMenuData.value) {
+  executeMenuData()
+}
 
 watch(() => genDateFormat('HH'), () => {
   if (genDateFormat('HH').concat('00') !== forecastHour.value) {

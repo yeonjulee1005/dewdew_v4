@@ -9,7 +9,7 @@ const { windowSize } = storeToRefs(useWindowStore())
 
 <template>
   <div
-    v-if="windowSize > 768"
+    v-if="windowSize > 890"
     class="fixed top-0 w-dvw h-fit flex justify-center bg-neutral-800/15 dark:bg-neutral-100/40 z-20"
   >
     <div class="w-full lg:w-[900px] h-fit flex items-end gap-x-4 px-6 py-4">

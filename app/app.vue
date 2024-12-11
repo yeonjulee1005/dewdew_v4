@@ -4,7 +4,6 @@ import { SpeedInsights } from '@vercel/speed-insights/vue'
 const { coords, resume } = useGeolocation()
 
 const { width } = useWindowSize()
-const { userAgent } = useDevice()
 const appConfig = useAppConfig()
 const { meta, path } = useRoute()
 
@@ -51,22 +50,6 @@ useHead({
     { property: 'imagetoolbar', content: 'no' },
   ],
 })
-
-if (!userAgent.includes('APP_Dewdew')) {
-  useHead({
-    script: [
-      {
-        hid: 'google-adsense',
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9720546940719922',
-        crossorigin: 'anonymous',
-        defer: true,
-      },
-    ],
-    meta: [
-      { name: 'google-adsense-account', content: 'ca-pub-9720546940719922' },
-    ],
-  })
-}
 
 useSeoMeta({
   charset: 'utf-16',

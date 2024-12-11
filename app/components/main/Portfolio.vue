@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import type { DataDatabase } from '~/types/supabase-data'
 
+useHead({
+  script: [
+    {
+      hid: 'spiine-viewer',
+      src: 'https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js',
+      type: 'module',
+      defer: true,
+      async: true,
+    },
+  ],
+})
+
 const mainPortfolioData = defineModel('mainPortfolioData', {
   type: Array as PropType<DataDatabase['data']['Tables']['portfolio']['Row'][]>,
   default: () => [],
@@ -33,13 +45,15 @@ const navigatePortfolio = (url: string) => {
           @click="navigatePortfolio(item.url ?? '')"
           @touchstart="navigatePortfolio(item.url ?? '')"
         >
-          <ASplineCanvas
-            v-if="item.dynamic_thumbnail_url"
-            canvas-class="w-60 h-60 object-cover rounded-xl ring-2 ring-indigo-400 dark:ring-indigo-400 hover:ring-4 hover:ring-indigo-400/70 hover:dark:ring-indigo-400/70 transition-ring duration-200 ease-in-out"
-            :spline-url="item.dynamic_thumbnail_url"
-          />
+          <Suspense>
+            <ASplineCanvas
+              v-if="item.dynamic_thumbnail_url"
+              canvas-class="w-60 h-60 object-cover rounded-xl ring-2 ring-indigo-400 dark:ring-indigo-400 hover:ring-4 hover:ring-indigo-400/70 hover:dark:ring-indigo-400/70 transition-ring duration-200 ease-in-out"
+              :spline-url="item.dynamic_thumbnail_url"
+            />
+          </Suspense>
           <NuxtImg
-            v-else
+            v-if="!item.dynamic_thumbnail_url"
             class="w-60 h-60 object-cover rounded-xl ring-2 ring-indigo-400 dark:ring-indigo-400 hover:ring-4 hover:ring-indigo-400/70 hover:dark:ring-indigo-400/70 transition-ring duration-200 ease-in-out"
             :src="item.description_image_url ?? ''"
             width="200"

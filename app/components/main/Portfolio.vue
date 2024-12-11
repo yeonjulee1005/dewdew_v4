@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { DataDatabase } from '~/types/supabase-data'
 
+const { url } = useImageStorage()
+
 useHead({
   script: [
     {
@@ -56,8 +58,6 @@ const navigatePortfolio = (url: string) => {
             v-if="!item.dynamic_thumbnail_url"
             class="w-60 h-60 object-cover rounded-xl ring-2 ring-indigo-400 dark:ring-indigo-400 hover:ring-4 hover:ring-indigo-400/70 hover:dark:ring-indigo-400/70 transition-ring duration-200 ease-in-out"
             :src="item.description_image_url ?? ''"
-            width="200"
-            height="200"
             format="webp"
             loading="lazy"
             fit="cover"
@@ -73,8 +73,17 @@ const navigatePortfolio = (url: string) => {
     </div>
     <div class="absolute top-0 left-[-20%] w-[1000px] h-[1000px] bg-red-500/30 rounded-full animated-first-circle" />
     <div class="absolute top-[45%] right-[30%] w-[400px] h-[400px] bg-green-500/30 rounded-full animated-second-circle" />
-    <div class="absolute top-[70%] left-[20%] w-[200px] h-[200px] bg-blue-500/30 rounded-full animated-third-circle" />
-    <div class="absolute bottom-0 right-[-10%] w-[700px] h-[700px] bg-orange-500/30 rounded-full animated-fourth-circle" />
+    <div class="absolute top-[70%] left-[20%] w-[200px] h-[200px] bg-orange-500/30 rounded-full animated-third-circle" />
+    <div
+      class="absolute bottom-0 right-[-10%] w-[700px] h-[700px] rounded-full animated-fourth-circle"
+      :style="{
+        backgroundImage: `url(${url(true, '/assets/banner/sanfran.webp')})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        opacity: 0.3,
+      }"
+    />
   </div>
 </template>
 

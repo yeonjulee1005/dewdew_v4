@@ -24,7 +24,10 @@ withDefaults(
 <template>
   <ClientOnly>
     <div :class="canvasClass">
-      <spline-viewer :url="splineUrl" />
+      <spline-viewer
+        loading-anim-type="spinner-small-dark"
+        :url="splineUrl"
+      />
     </div>
   </ClientOnly>
 </template>

@@ -4,7 +4,7 @@
     "name": "Dewdew",
     "email": "yeonju.lee1005@gmail.com"
   },
-  "version": "3.7.1",
+  "version": "3.8.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -49,7 +49,7 @@
     "@nuxtjs/i18n": "^9.1.1",
     "@nuxtjs/stylelint-module": "^5.2.0",
     "@nuxtjs/supabase": "^1.4.3",
-    "@pinia/nuxt": "^0.8.0",
+    "@pinia/nuxt": "^0.9.0",
     "@sentry/vite-plugin": "^2.22.6",
     "@sentry/vue": "^8.42.0",
     "@vercel/analytics": "^1.4.1",
@@ -65,7 +65,7 @@
     "stylelint": "^16.11.0",
     "stylelint-config-recommended-scss": "^14.1.0",
     "stylelint-config-recommended-vue": "^1.5.0",
-    "supabase": "^1.226.3",
+    "supabase": "^2.0.0",
     "typeit": "^8.8.7",
     "typescript": "^5.7.2",
     "vite-plugin-eslint2": "^5.0.3",

@@ -123,8 +123,8 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
             button-variant="ghost"
             button-size="xl"
             use-leading
-            :image-url="url(true, '/assets/logo/kakao_medium.webp')"
-            image
+            :image-url="url(true, '/assets/logo/kakao_logo.webp')"
+            image-class="w-8 h-8 rounded-md"
             :button-text="$t('main.kakao')"
             @click="navigateTo('https://open.kakao.com/o/subhorMe', { external: true, open: { target: '_blank' } })"
           />

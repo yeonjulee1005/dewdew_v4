@@ -92,7 +92,7 @@ useSeoMeta({
   twitterCreator: '@dewdew',
 })
 
-const { execute: executeMenuData } = useAsyncData('menuData', async () => {
+const { execute: executeMenuData } = await useAsyncData('menuData', async () => {
   const { data } = await useFetch('/api/menuData', {
     headers: useRequestHeaders(['cookie']),
     immediate: true,
@@ -110,6 +110,21 @@ if (!viewMenuData.value) {
   executeMenuData()
 }
 
+const initWeatherData = () => {
+  const rs = dfsXyConvert('toXY', coords.value.latitude, coords.value.longitude)
+
+  geoX.value = Math.floor(rs.x ?? 0)
+  geoY.value = Math.floor(rs.y ?? 0)
+
+  latitude.value = rs.lat
+  longitude.value = rs.lng
+
+  currentLocationCode.value = filteredLocations(geoX.value, geoY.value)
+
+  fetchLivingData()
+  fetchWeatherData()
+}
+
 watch(() => genDateFormat('HH'), () => {
   if (genDateFormat('HH').concat('00') !== forecastHour.value) {
     fetchLivingData()
@@ -125,21 +140,6 @@ watch(() => coords.value, () => {
 
   initWeatherData()
 }, { immediate: true })
-
-const initWeatherData = () => {
-  const rs = dfsXyConvert('toXY', coords.value.latitude, coords.value.longitude)
-
-  geoX.value = Math.floor(rs.x ?? 0)
-  geoY.value = Math.floor(rs.y ?? 0)
-
-  latitude.value = rs.lat
-  longitude.value = rs.lng
-
-  currentLocationCode.value = filteredLocations(geoX.value, geoY.value)
-
-  fetchLivingData()
-  fetchWeatherData()
-}
 
 watch(width, () => {
   if (import.meta.client) {

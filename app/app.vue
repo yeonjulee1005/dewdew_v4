@@ -106,10 +106,6 @@ const { execute: executeMenuData } = await useAsyncData('menuData', async () => 
   immediate: true,
 })
 
-if (!viewMenuData.value) {
-  executeMenuData()
-}
-
 const initWeatherData = () => {
   const rs = dfsXyConvert('toXY', coords.value.latitude, coords.value.longitude)
 
@@ -148,6 +144,8 @@ watch(width, () => {
 }, {
   immediate: true,
 })
+
+executeMenuData()
 </script>
 
 <template>

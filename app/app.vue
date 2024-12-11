@@ -23,7 +23,7 @@ const { dfsXyConvert } = useTranslateCoords()
 const seoTitle = 'Dewdew | Software Engineer 이연주'
 const seoDescription = 'Dewdew는 소프트웨어 엔지니어 이연주의 웹페이지 입니다. 주로 프론트엔드 개발(Nuxt3)에 관심이 있습니다.'
 const seoUrl = `https://www.dewdew.dev${path}`
-const seoImage = 'https://api.dewdew.dev/storage/v1/object/public/assets/banner/main_banner.webp'
+const seoImage = 'https://api.dewdew.dev/storage/v1/object/public/assets/banner/main_banner_v4.webp'
 
 useHead({
   title: (meta.title as string) ?? t('pageTitle.dewdew'),

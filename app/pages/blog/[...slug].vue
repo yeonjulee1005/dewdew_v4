@@ -18,7 +18,7 @@ useHead({
     { property: 'description', content: t('openGraph.blog') },
     { property: 'og:title', content: t('pageTitle.blog') },
     { property: 'og:description', content: t('openGraph.blog') },
-    { property: 'og:url', content: `https://www.dewdew.kr${path}` },
+    { property: 'og:url', content: `https://www.dewdew.dev${path}` },
   ],
 })
 </script>

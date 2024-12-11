@@ -56,8 +56,9 @@ export default {
     SMC006: 'MotorCycle Advisor AI 🧽',
     SMC007: 'Github',
     SMC008: 'Linkedin',
-    SMC009: 'Instagram',
-    SMC010: 'Youtube',
+    SMC009: 'Dewdew World',
+    SMC010: 'Instagram',
+    SMC011: 'Youtube',
   },
   main: {
     intro: {

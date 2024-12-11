@@ -3,7 +3,7 @@ const { idle } = useIdle(3 * 60 * 1000)
 
 let countInterval: ReturnType<typeof setInterval> | null = null
 
-const count = ref(60)
+const count = ref(30)
 
 const idleTrigger = computed(() => {
   return idle.value

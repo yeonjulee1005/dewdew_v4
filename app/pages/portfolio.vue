@@ -98,21 +98,37 @@ onMounted(() => {
           <p class="text-xl sm:text-3xl font-bold">
             {{ $t(`portfolio.${selectedPortfolioData.code}.title`) }}
           </p>
-          <p class="text-base sm:text-xl break-keep">
-            {{ $t(`portfolio.${selectedPortfolioData.code}.description`) }}
-          </p>
+          <div>
+            <p
+              v-for="(text, index) in $tm(`portfolio.${selectedPortfolioData.code}.description`)"
+              :key="index"
+              class="text-base sm:text-xl break-keep"
+            >
+              {{ $rt(text) }}
+            </p>
+          </div>
+          <div>
+            <p
+              v-for="(text, index) in $tm(`portfolio.${selectedPortfolioData.code}.stack`)"
+              :key="index"
+              class="text-xs sm:text-base break-keep text-stone-500 dark:text-stone-400"
+            >
+              {{ $rt(text) }}
+            </p>
+          </div>
         </div>
       </template>
-      <NuxtImg
-        :src="selectedPortfolioData.description_image_url ?? ''"
-        width="800"
-        height="100%"
-        format="webp"
-        fit="cover"
-        :alt="selectedPortfolioData.alt ?? ''"
-        :draggable="false"
-        @contextmenu.prevent
-      />
+      <div class="flex justify-center">
+        <NuxtImg
+          :src="selectedPortfolioData.description_image_url ?? ''"
+          class="max-h-[400px] w-auto"
+          format="webp"
+          fit="cover"
+          :alt="selectedPortfolioData.alt ?? ''"
+          :draggable="false"
+          @contextmenu.prevent
+        />
+      </div>
     </UCard>
   </div>
 </template>

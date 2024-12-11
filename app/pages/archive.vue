@@ -77,7 +77,7 @@ onMounted(() => {
   <div class="w-full max-w-[1900px] h-fit flex items-center justify-center px-6 mt-40">
     <div class="w-full flex flex-col gap-y-8">
       <p class="text-4xl font-bold">
-        {{ $t('archives.title') }}
+        {{ $t('archive.title') }}
       </p>
       <UButtonGroup
         class="w-full flex justify-end"
@@ -104,8 +104,8 @@ onMounted(() => {
             :key="index"
             class="w-80 h-[500px] object-cover cursor-pointer border-4 border-stone-300 dark:border-stone-700 rounded-lg hover:border-indigo-400 hover:dark:border-indigo-400/70 transition-border duration-300 ease-in-out mx-4"
             :src="item?.url ?? ''"
-            width="200"
-            height="200"
+            :width="320"
+            :height="500"
             format="webp"
             fit="cover"
             :alt="item?.title ?? ''"
@@ -121,14 +121,12 @@ onMounted(() => {
     </div>
     <ModalImage
       v-model:image-modal-trigger="imageModalTrigger"
-      :title="selectedArchiveImageTitle"
+      :title="$t(`archive.historyTitle`, { year: selectedArchive?.title })"
     >
       <div class="h-full w-full flex justify-center items-center">
         <NuxtImg
           :src="selectedArchiveImageUrl"
-          class="w-dvw h-auto object-cover"
-          width="100%"
-          height="100%"
+          class="w-auto max-h-[700px] object-cover"
           format="webp"
           fit="cover"
           :alt="selectedArchiveImageUrl"

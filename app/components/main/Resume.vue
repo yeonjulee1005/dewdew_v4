@@ -17,7 +17,7 @@ const { resumeKoList, resumeEnList } = useResumeData()
         <div class="flex flex-col items-center gap-y-12">
           <NuxtImg
             class="w-2/3 md:w-80 h-fit rounded-full ring-4 ring-indigo-400/50"
-            :src="url(true, '/assets/banner/resume_img.webp')"
+            :src="url(true, '/assets/banner/resume_img_v4.webp')"
             :height="360"
             :width="360"
             legacy-format="webp"

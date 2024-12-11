@@ -52,6 +52,7 @@ export type MenuDatabase = {
           deleted: boolean | null
           icon: string | null
           id: string
+          image_url: string | null
           index: number | null
           menu_category_id: string | null
           update_user_id: string | null
@@ -64,6 +65,7 @@ export type MenuDatabase = {
           deleted?: boolean | null
           icon?: string | null
           id?: string
+          image_url?: string | null
           index?: number | null
           menu_category_id?: string | null
           update_user_id?: string | null
@@ -76,6 +78,7 @@ export type MenuDatabase = {
           deleted?: boolean | null
           icon?: string | null
           id?: string
+          image_url?: string | null
           index?: number | null
           menu_category_id?: string | null
           update_user_id?: string | null

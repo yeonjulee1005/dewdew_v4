@@ -121,81 +121,201 @@ export default {
   portfolio: {
     PFC001: {
       title: 'Goodnodes Co., Ltd.',
-      description: 'This is the introduction page of Goodnode Co., Ltd. developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+      description: [
+        'Introduction page of Goodnodes Co., Ltd. developed using Nuxt3 and Supabase.',
+        'A prototype page and is currently under development.',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Supabase, Nuxt UI, TailwindCSS, TypeScript, Vercel',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
     },
     PFC002: {
       title: 'Dewbee',
-      description: 'A personal side project, an expenditure management service for surplus funds developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+      description: [
+        'Personal side project for managing surplus funds.',
+        'It is currently in commercial distribution and has been released on the IOS App Store. (AOS release is undecided)',
+      ],
+      stack: [
+        'Tech stack: Nuxt4, Supabase, Nuxt UI V3, TailwindCSS, TypeScript, Vercel, WebView Application',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
     },
     PFC003: {
       title: 'Pixel Checker',
-      description: 'A personal side project, a monitor pixel check service developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+      description: [
+        'Personal side project for checking monitor pixels.',
+        'It is currently in commercial distribution and has been released on the IOS App Store. (AOS release is undecided)',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Supabase, Nuxt UI V3, TailwindCSS, TypeScript, Vercel, WebView Application',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
     },
     PFC004: {
       title: 'Dewdew World',
-      description: 'A static website developed using Astro. It is a personal development blog.',
+      description: [
+        'Static website developed using Astro. It is a personal development blog.',
+      ],
+      stack: [
+        'Tech stack: Astro, Astro Content, TailwindCSS, TypeScript, Vercel',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
     },
     PFC005: {
       title: 'Dooramg',
-      description: 'A personal side project, a two-wheeled vehicle management solution developed using Nuxt3. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+      description: [
+        'Personal side project for managing motorcycle maintenance records.',
+        'It is currently in commercial distribution and has been released on the IOS App Store. (AOS release is undecided)',
+        'Continuous build-up is in progress.',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Supabase, Element Plus, TailwindCSS, TypeScript, Vercel, WebView Application',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
     },
     PFC006: {
       title: 'Gadget Korea',
-      description: 'The company introduction page of Gadget Korea developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100%, BE: 100%',
+      description: [
+        'Company introduction page of Gadget Korea developed using Nuxt3 and Supabase.',
+        'We also worked on the CRM admin page to make it convenient for users (administrators) to manage the page.',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Supabase, Element Plus, TailwindCSS, TypeScript, Vercel',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
     },
     PFC007: {
       title: 'Gadget Korea CRM',
-      description: 'A back office managing the introduction page of Gadget Korea developed using Nuxt3 and Supabase. (FE: Nuxt3 / BE: Supabase) Participation: FE: 100% / BE: 100%',
+      description: [
+        'Back-office (CRM) page for managing the introduction page of Gadget Korea developed using Nuxt3 and Supabase.',
+        'We also worked on the user screen to make it convenient for users (administrators) to manage the page.',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Supabase, Element Plus, TailwindCSS, TypeScript, Vercel',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
     },
     PFC008: {
       title: 'Usimsa',
-      description: 'A roaming eSim service page developed using Nuxt3. It is a lead development project. (FE: Nuxt3, BE: Nest) Participation: FE: 90% / BE: 5%',
+      description: [
+        'Roaming eSim service page developed using Nuxt3.',
+        'It provides a better user experience through SEO-friendly work and hybrid rendering (SSR + CSR).',
+        'This is a lead development project.',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Element Plus, Nest, TailwindCSS, TypeScript, Vercel',
+        'Development participation: FE: 90% / BE: 5%',
+      ],
     },
     PFC009: {
       title: 'Usimsa CRM',
-      description: 'The Usimsa admin page developed using Nuxt3. It is a lead development project. (FE: Nuxt3, BE: Nest) Participation: FE: 90% / BE: 5%',
+      description: [
+        'Admin page of Usimsa developed using Nuxt3.',
+        'This is a lead development project.',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Element Plus, Nest, TailwindCSS, TypeScript, Vercel',
+        'Development participation: FE: 90% / BE: 5%',
+      ],
     },
     PFC010: {
       title: 'Usimsa Partner Page',
-      description: 'The Usimsa partners admin page developed using Nuxt3. It is a lead development project. (FE: Nuxt3, BE: Nest) Participation: FE: 90% / BE: 5%',
+      description: [
+        'Usimsa Partners admin page developed using Nuxt3.',
+        'This is a lead development project.',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Element Plus, Nest, TailwindCSS, TypeScript, Vercel',
+        'Development participation: FE: 90% / BE: 5%',
+      ],
     },
     PFC011: {
       title: 'Usimsa Dashboard',
-      description: 'A collection of Usimsa sales status graphs developed using Nuxt3 and eCharts. It is a lead development project. (FE: Nuxt3 / BE: Nest) Participation: FE: 90% / BE: 5%',
+      description: [
+        'Collection of Usimsa sales status graphs developed using Nuxt3 and eCharts.',
+        'This is a lead development project.',
+      ],
+      stack: [
+        'Tech stack: Nuxt3, Element Plus, Echarts, Nest, TailwindCSS, TypeScript, Vercel',
+        'Development participation: FE: 90% / BE: 5%',
+      ],
     },
     PFC012: {
       title: 'Avrosoft Korea',
-      description: 'A responsive webpage based on PHP and Javascript.',
+      description: [
+        'Responsive web page based on PHP and Javascript.',
+      ],
+      stack: [
+        'Tech stack: PHP, Javascript',
+        'Development participation: FE: 60%',
+      ],
     },
     PFC013: {
       title: 'HR Management Platform',
-      description: 'A promotional and user page for a cloud-based labor and HR management platform developed using Nuxt2 and Node.js.',
+      description: [
+        'Promotional page and user page of a cloud-based labor and HR management platform developed using Nuxt2 and Node.js.',
+      ],
+      stack: [
+        'Tech stack: Nuxt2, Node.js',
+        'Development participation: FE: 70%',
+      ],
     },
     PFC014: {
       title: 'Doowon',
-      description: 'A responsive webpage based on PHP and Javascript.',
+      description: [
+        'Responsive web page based on PHP and Javascript.',
+      ],
+      stack: [
+        'Tech stack: PHP, Javascript',
+        'Development participation: FE: 60%',
+      ],
     },
     PFC015: {
       title: 'Orijen',
-      description: 'A responsive webpage based on PHP and Javascript.',
+      description: [
+        'Responsive web page based on PHP and Javascript.',
+      ],
+      stack: [
+        'Tech stack: PHP, Javascript',
+        'Development participation: FE: 60%',
+      ],
     },
     PFC016: {
       title: 'Woozo',
-      description: 'A responsive webpage based on PHP and Javascript.',
+      description: [
+        'Responsive web page based on PHP and Javascript.',
+      ],
+      stack: [
+        'Tech stack: PHP, Javascript',
+        'Development participation: FE: 60%',
+      ],
     },
     PFC017: {
       title: 'Invenia',
-      description: 'Maintenance of the company legacy site.',
+      description: [
+        'Maintenance of the company\'s legacy site',
+      ],
+      stack: [
+        'Tech stack: PHP, Javascript',
+        'Development participation: FE: 40%',
+      ],
     },
     PFC018: {
       title: 'Bega',
-      description: 'A responsive webpage based on Javascript.',
+      description: [
+        'Responsive web page based on Javascript.',
+      ],
+      stack: [
+        'Tech stack: Javascript',
+        'Development participation: FE: 40%',
+      ],
     },
   },
-  archives: {
+  archive: {
     title: 'Dewdew History',
     back: 'Back',
-    historyTitle: 'HISTORY OF',
+    historyTitle: 'HISTORY OF {year}',
   },
   blog: {
     recentPost: 'Recent Post',

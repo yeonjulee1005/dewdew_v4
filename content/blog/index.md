@@ -27,16 +27,18 @@ head:
 ---
 
 ::card{class="content-card"}
-기술 외적인 포스팅을 올리기 위한 블로그입니다.<br>
-본 블로그는 `Nuxt Content`를 이용하여,<br>
-`markdown`으로 간단하게 작성할 수 있도록 구현되였습니다.
+기술 외적인 포스팅(개발회고, 일상 이야기 등)을 올리기 위한 블로그입니다.<br>
+본 블로그는 [Nuxt Content](https://content.nuxt.com/)를 이용하여, `markdown`으로 간편하게 작성할 수 있도록 구현되였습니다.
 <hr />
 ::
 
 ::card{class="content-card"}
-##### 발행된 블로그 리스트입니다.
+### 발행된 블로그 리스트입니다.
 ::
 
+::card{class="menu-list"}
+- #### [2024년 12월 회고 (20241205)](/blog/20241205)
+::
 ::card{class="menu-list"}
 - #### [2024년 2월 회고 (20240301)](/blog/20240301)
 ::

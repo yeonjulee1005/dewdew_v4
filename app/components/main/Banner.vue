@@ -8,10 +8,8 @@ const { url } = useImageStorage()
       {{ $t('main.intro.largeTitle') }}
     </span>
     <NuxtImg
-      :src="url(true, '/assets/banner/main_banner.webp')"
+      :src="url(true, '/assets/banner/main_banner_v4.webp')"
       class="sm:w-dvw sm:max-w-[1900px]"
-      width="100%"
-      height="100%"
       format="webp"
       fit="cover"
       sizes="(max-width: 600px) 100vw, 50vw"

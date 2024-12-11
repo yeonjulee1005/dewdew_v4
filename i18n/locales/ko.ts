@@ -121,81 +121,201 @@ export default {
   portfolio: {
     PFC001: {
       title: '굿노드 주식회사',
-      description: 'Nuxt3, Supabase를 이용하여 개발한 굿노드 주식회사의 소개페이지 입니다. (FE:Nuxt3 / BE: Supabase) 참여: FE: 100% / BE: 100%',
+      description: [
+        'Nuxt3, Supabase를 이용하여 개발한 굿노드 주식회사의 소개페이지 입니다.',
+        '프로토타입 페이지로, 현재는 개발 진행중입니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Supabase, Nuxt UI, TailwindCSS, TypeScript, Vercel',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
     },
     PFC002: {
       title: '듀비',
-      description: '1인 사이드 프로젝트로 진행한, Nuxt3, Supabase를 이용하여 개발한 여유자금 지출관리 서비스 입니다. (FE:Nuxt3 / BE: Supabase) 참여: FE: 100% / BE: 100%',
+      description: [
+        '1인 사이드 프로젝트로 진행한 여유자금 지출관리 서비스 입니다.',
+        '현재는 상용화 배포 상태이며, IOS 앱 스토어에 출시되었습니다. (AOS는 출시미정)',
+      ],
+      stack: [
+        '기술스택: Nuxt4, Supabase, Nuxt UI V3, TailwindCSS, TypeScript, Vercel, WebView Application',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
     },
     PFC003: {
       title: '픽셀 체커',
-      description: '1인 사이드 프로젝트로 진행한, Nuxt3, Supabase를 이용하여 개발한 모니터 픽셀 체크 서비스 입니다. (FE:Nuxt3 / BE: Supabase) 참여: FE: 100% / BE: 100%',
+      description: [
+        '1인 사이드 프로젝트로 진행한 모니터 픽셀 체크 서비스 입니다.',
+        '현재는 상용화 배포 상태이며, IOS 앱 스토어에 출시되었습니다. (AOS는 출시미정)',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Supabase, Nuxt UI V3, TailwindCSS, TypeScript, Vercel, WebView Application',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
     },
     PFC004: {
       title: '듀듀 월드',
-      description: 'Astro를 이용하여 개한 정적 웹사이트 입니다. 개인 개발 블로그입니다.',
+      description: [
+        'Astro를 이용하여 개발한 정적 웹사이트 입니다. 개인 개발 블로그입니다.',
+      ],
+      stack: [
+        '기술스택: Astro, Astro Content, TailwindCSS, TypeScript, Vercel',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
     },
     PFC005: {
       title: '두람쥐',
-      description: '1인 사이드 프로젝트로 진행한, Nuxt3 를 이용하여 개발한 이륜자동차 관리 솔루션 입니다. (FE:Nuxt3 /  BE:Supabase) 참여: FE: 100% / BE: 100%',
+      description: [
+        '1인 사이드 프로젝트로 진행한 이륜자동차 차계부 서비스 입니다.',
+        '현재는 상용화 배포 상태이며, IOS 앱 스토어에 출시되었습니다. (AOS는 출시미정)',
+        '지속적인 빌드업 진행중입니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Supabase, Element Plus, TailwindCSS, TypeScript, Vercel, WebView Application',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
     },
     PFC006: {
       title: '가제트코리아',
-      description: 'Nuxt3, Supabase를 이용하여 개발한 가제트코리아 회사소개 페이지 입니다. (FE:Nuxt3 / BE:Supabase) 참여: FE: 100%, BE: 100%',
+      description: [
+        'Nuxt3, Supabase를 이용하여 개발한 가제트코리아 회사소개 페이지 입니다.',
+        'CRM 관리자페이지 까지 함께 작업하여, 사용자(관리자)가 편리하게 페이지를 관리할 수 있도록 개발 하였습니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Supabase, Element Plus, TailwindCSS, TypeScript, Vercel',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
     },
     PFC007: {
       title: '가제트코리아 CRM',
-      description: 'Nuxt3, Supabase를 사용하여 개발한 가제트코리아 소개페이지를 관리하는 백오피스 입니다. (FE:Nuxt3 / BE: Supabase) 참여: FE: 100% / BE: 100%',
+      description: [
+        'Nuxt3, Supabase를 사용하여 개발한 가제트코리아 소개페이지를 관리하는 백오피스(CRM) 페이지 입니다.',
+        '사용자화면 까지 함께 작업하여, 사용자(관리자)가 편리하게 페이지를 관리할 수 있도록 개발 하였습니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Supabase, Element Plus, TailwindCSS, TypeScript, Vercel',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
     },
     PFC008: {
       title: '유심사',
-      description: 'Nuxt3를 사용하여 개발한 로밍 eSim 서비스 페이지 입니다. 리드개발 진행건 입니다. (FE:Nuxt3, BE: Nest) 참여: FE: 90% / BE: 5%',
+      description: [
+        'Nuxt3를 사용하여 개발한 로밍 eSim 서비스 페이지 입니다.',
+        'SEO 친화적인 작업과, 하이브리드 랜더링(SSR + CSR)을 통한 보다 좋은 사용자 경험을 제공합니다.',
+        'FE 리드개발 진행건 입니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Element Plus, Nest, TailwindCSS, TypeScript, Vercel',
+        '개발 참여: FE: 90% / BE: 5%',
+      ],
     },
     PFC009: {
       title: '유심사 CRM',
-      description: 'Nuxt3를 사용하여 개발한 유심사 관리자페이지 입니다. 리드개발 진행건 입니다. (FE:Nuxt3, BE: Nest) 참여: FE: 90% / BE: 5%',
+      description: [
+        'Nuxt3를 사용하여 개발한 유심사 관리자페이지 입니다.',
+        '리드개발 진행건 입니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Element Plus, Nest, TailwindCSS, TypeScript, Vercel',
+        '개발 참여: FE: 90% / BE: 5%',
+      ],
     },
     PFC010: {
       title: '유심사 파트너페이지',
-      description: 'Nuxt3 를 사용하여 개발한 유심사 파트너스 관리자페이지 입니다. 리드개발 진행건 입니다. (FE:Nuxt3, BE: Nest) 참여: FE: 90% / BE: 5%',
+      description: [
+        'Nuxt3 를 사용하여 개발한 유심사 파트너스 관리자페이지 입니다.',
+        '리드개발 진행건 입니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Element Plus, Nest, TailwindCSS, TypeScript, Vercel',
+        '개발 참여: FE: 90% / BE: 5%',
+      ],
     },
     PFC011: {
       title: '유심사 대시보드',
-      description: 'Nuxt3, eCharts를 이용하여 개발한 유심사 판매현황 그래프 모음입니다. 리드개발 진행건 입니다.(FE:Nuxt3 / BE:Nest) 참여: FE: 90% / BE:5%',
+      description: [
+        'Nuxt3, eCharts를 이용하여 개발한 유심사 판매현황 그래프 모음입니다.',
+        '리드개발 진행건 입니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt3, Element Plus, Echarts, Nest, TailwindCSS, TypeScript, Vercel',
+        '개발 참여: FE: 90% / BE: 5%',
+      ],
     },
     PFC012: {
       title: '아브로소프트 코리아',
-      description: 'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+      description: [
+        'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+      ],
+      stack: [
+        '기술스택: PHP, Javascript',
+        '개발 참여: FE: 60%',
+      ],
     },
     PFC013: {
       title: '인사관리플렛폼',
-      description: 'Nuxt2, Node.js를 이용한 클라우드기반 노무인사관리플랫폼의 홍보페이지 및 사용자페이지 입니다.',
+      description: [
+        'Nuxt2, Node.js를 이용한 클라우드기반 노무인사관리플랫폼의 홍보페이지 및 사용자페이지 입니다.',
+      ],
+      stack: [
+        '기술스택: Nuxt2, Node.js',
+        '개발 참여: FE: 70%',
+      ],
     },
     PFC014: {
       title: '두원',
-      description: 'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+      description: [
+        'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+      ],
+      stack: [
+        '기술스택: PHP, Javascript',
+        '개발 참여: FE: 60%',
+      ],
     },
     PFC015: {
       title: '오리젠',
-      description: 'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+      description: [
+        'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+      ],
+      stack: [
+        '기술스택: PHP, Javascript',
+        '개발 참여: FE: 60%',
+      ],
     },
     PFC016: {
       title: '우조',
-      description: 'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+      description: [
+        'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
+      ],
+      stack: [
+        '기술스택: PHP, Javascript',
+        '개발 참여: FE: 60%',
+      ],
     },
     PFC017: {
       title: '인베니아',
-      description: '자사 래거시 사이트 유지보수',
+      description: [
+        '자사 래거시 사이트 유지보수',
+      ],
+      stack: [
+        '기술스택: PHP, Javascript',
+        '개발 참여: FE: 40%',
+      ],
     },
     PFC018: {
       title: '베가',
-      description: '자바스크립트 기반의 반응형 웹페이지 입니다.',
+      description: [
+        '자바스크립트 기반의 반응형 웹페이지 입니다.',
+      ],
+      stack: [
+        '기술스택: Javascript',
+        '개발 참여: FE: 40%',
+      ],
     },
   },
-  archives: {
+  archive: {
     title: 'Dewdew History',
     back: '뒤로가기',
-    historyTitle: 'HISTORY OF',
+    historyTitle: 'HISTORY OF {year}',
   },
   blog: {
     recentPost: '최근 포스트',

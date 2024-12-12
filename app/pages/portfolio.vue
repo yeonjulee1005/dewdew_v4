@@ -88,7 +88,7 @@ onMounted(() => {
     <UCard
       v-if="selectedPortfolioData"
       :ui="{
-        root: 'cursor-pointer w-2/3 ring-2 hover:text-indigo-400 transition-text duration-200 ease-in-out',
+        root: 'cursor-pointer w-full md:w-2/3 ring-2 hover:text-indigo-400 transition-text duration-200 ease-in-out',
         body: 'p-0 sm:p-0 sm:py-2 py-2',
       }"
       @click="navigateTo(selectedPortfolioData.url, { external: true, open: { target: '_blank' } })"

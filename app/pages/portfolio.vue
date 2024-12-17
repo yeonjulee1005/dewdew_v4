@@ -85,7 +85,7 @@ onMounted(() => {
         </template>
       </Flicking>
     </ClientOnly>
-    <UCard
+    <DdCard
       v-if="selectedPortfolioData"
       :ui="{
         root: 'cursor-pointer w-full md:w-2/3 ring-2 hover:text-indigo-400 transition-text duration-200 ease-in-out',
@@ -129,6 +129,6 @@ onMounted(() => {
           @contextmenu.prevent
         />
       </div>
-    </UCard>
+    </DdCard>
   </div>
 </template>

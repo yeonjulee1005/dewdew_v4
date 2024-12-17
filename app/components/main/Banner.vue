@@ -18,7 +18,7 @@ const { url } = useImageStorage()
       :draggable="false"
       @contextmenu.prevent
     />
-    <UCard
+    <DdCard
       :ui="{
         root: 'relative sm:absolute sm:w-[360px] md:w-fit bg-transparent bg-gradient-to-bl from-fuchsia-400/30 via-indigo-400/30 to-sky-400/30 ring-2 ring-indigo-400 divide-indigo-400 sm:top-22 sm:left-16 mt-20 mx-6 sm:mx-0 sm:mt-0',
       }"
@@ -43,6 +43,6 @@ const { url } = useImageStorage()
           {{ $rt(text) }}
         </p>
       </template>
-    </UCard>
+    </DdCard>
   </div>
 </template>

@@ -44,7 +44,7 @@ const countDisplay = (index: number, _count: number): void => {
 </script>
 
 <template>
-  <UModal
+  <DdModal
     v-model:open="leaveDialogTrigger"
     :title="$t('messages.leavePage')"
     :description="$t('messages.leavePageDesc')"
@@ -59,7 +59,7 @@ const countDisplay = (index: number, _count: number): void => {
   >
     <template #body>
       <div class="flex flex-col justify-center items-center">
-        <UProgress
+        <DdProgress
           v-model="count"
           :max="30"
           size="xl"
@@ -67,5 +67,5 @@ const countDisplay = (index: number, _count: number): void => {
         />
       </div>
     </template>
-  </UModal>
+  </DdModal>
 </template>

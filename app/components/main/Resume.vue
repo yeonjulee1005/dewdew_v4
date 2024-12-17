@@ -7,7 +7,7 @@ const { resumeKoList, resumeEnList } = useResumeData()
 
 <template>
   <div class="w-full flex justify-center mt-50 px-6">
-    <UCard
+    <DdCard
       :ui="{
         root: 'w-full max-w-[1200px] ring-0 shadow-none py-6',
         body: 'sm:p-0 p-0',
@@ -51,6 +51,6 @@ const { resumeKoList, resumeEnList } = useResumeData()
         </div>
         <AAccordion :accordion-items="locale === 'ko' ? resumeKoList : resumeEnList" />
       </div>
-    </UCard>
+    </DdCard>
   </div>
 </template>

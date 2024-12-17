@@ -29,7 +29,7 @@ const inputValue = defineModel('inputValue', {
 </script>
 
 <template>
-  <UInput
+  <DdInput
     v-model="inputValue"
     class="w-full"
     :color="inputColor"
@@ -61,5 +61,5 @@ const inputValue = defineModel('inputValue', {
         />
       </div>
     </template>
-  </UInput>
+  </DdInput>
 </template>

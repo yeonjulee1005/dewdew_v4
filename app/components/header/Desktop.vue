@@ -39,7 +39,7 @@ const { windowSize } = storeToRefs(useWindowStore())
           {{ $t(`menu.${menu.code}`) }}
         </NuxtLink>
       </div>
-      <USeparator
+      <DdSeparator
         class="h-6"
         orientation="vertical"
       />

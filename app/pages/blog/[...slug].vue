@@ -69,7 +69,7 @@ useHead({
           repo="yeonjulee1005/dewdew_v4"
           repo-id="R_kgDOKjJUyA"
           category="Blog"
-          category-id="DIC_kwDOKjJUyM4Cc6rs"
+          category-id="DIC_kwDONZHIhM4Ck7BA"
           mapping="pathname"
           strict="0"
           reactions-enabled="1"

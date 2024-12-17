@@ -77,6 +77,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/**': { swr: 30 * 60 },
+    '/blog': { swr: false },
     '/blog/**': { swr: false },
   },
   sourcemap: {

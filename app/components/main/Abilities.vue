@@ -109,7 +109,7 @@ const usedTools = ref([
 
 <template>
   <div class="w-full flex justify-center mt-50 px-6">
-    <UCard
+    <DdCard
       :ui="{
         root: 'w-full max-w-[1200px] ring-indigo-400/50 divide-indigo-400/50',
       }"
@@ -144,6 +144,6 @@ const usedTools = ref([
           :used-languages="usedTools"
         />
       </template>
-    </UCard>
+    </DdCard>
   </div>
 </template>

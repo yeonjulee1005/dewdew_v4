@@ -167,12 +167,12 @@ initColorData()
         @click="colorPicker"
       />
     </div>
-    <UForm
+    <DdForm
       :state="formData"
       class="flex flex-col gap-6 px-4 py-3"
       @submit="() => {}"
     >
-      <UFormField
+      <DdFormField
         :label="$t('colorsTranslate.hexLabel')"
         name="hex-color"
         size="xl"
@@ -184,8 +184,8 @@ initColorData()
           use-copy
           @copy:color="copyColor"
         />
-      </UFormField>
-      <UFormField
+      </DdFormField>
+      <DdFormField
         :label="$t('colorsTranslate.rgbLabel')"
         name="rgb-color"
         size="xl"
@@ -196,8 +196,8 @@ initColorData()
           use-copy
           @copy:color="copyColor"
         />
-      </UFormField>
-      <UFormField
+      </DdFormField>
+      <DdFormField
         :label="$t('colorsTranslate.hslLabel')"
         size="xl"
         name="hls-color"
@@ -208,8 +208,8 @@ initColorData()
           use-copy
           @copy:color="copyColor"
         />
-      </UFormField>
-      <UFormField
+      </DdFormField>
+      <DdFormField
         :label="$t('colorsTranslate.cmykLabel')"
         size="xl"
         name="cmyk-color"
@@ -220,7 +220,7 @@ initColorData()
           use-copy
           @copy:color="copyColor"
         />
-      </UFormField>
+      </DdFormField>
       <AButton
         custom-class="submit-button flex justify-center text-xl"
         button-variant="subtle"
@@ -228,6 +228,6 @@ initColorData()
         :button-text="$t('texts.regenerate')"
         @click="initColorData"
       />
-    </UForm>
+    </DdForm>
   </div>
 </template>

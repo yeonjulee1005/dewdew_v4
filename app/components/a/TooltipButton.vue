@@ -62,7 +62,7 @@ defineEmits([
 </script>
 
 <template>
-  <UTooltip
+  <DdTooltip
     :text="tooltipText ? tooltipText : buttonText"
     :disabled="hideTooltip"
     :content="{
@@ -74,7 +74,7 @@ defineEmits([
       content: 'visible [@media(pointer:coarse)]:visible h-6 px-2 py-1 text-xs font-normal truncate relative text-indigo-600 dark:text-indigo-400',
     }"
   >
-    <UButton
+    <DdButton
       :class="customClass"
       :ui="{ base: buttonRounded ? buttonRounded : 'rounded-md', label: buttonLabelClass }"
       :disabled="buttonDisabled"
@@ -116,6 +116,6 @@ defineEmits([
           :name="iconTrailName"
         />
       </template>
-    </UButton>
-  </UTooltip>
+    </DdButton>
+  </DdTooltip>
 </template>

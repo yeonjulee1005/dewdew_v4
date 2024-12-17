@@ -132,7 +132,7 @@ executeMenuData()
 </script>
 
 <template>
-  <UApp :toaster="appConfig.toaster">
+  <DdApp :toaster="appConfig.toaster">
     <VitePwaManifest />
     <NuxtLayout>
       <NuxtLoadingIndicator
@@ -143,7 +143,7 @@ executeMenuData()
       <InstallPwa />
     </NuxtLayout>
     <SpeedInsights />
-  </UApp>
+  </DdApp>
 </template>
 
 <style>

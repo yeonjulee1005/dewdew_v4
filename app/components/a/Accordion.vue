@@ -25,7 +25,7 @@ withDefaults(
 </script>
 
 <template>
-  <UAccordion
+  <DdAccordion
     class="px-10 gap-2"
     type="multiple"
     open-icon="i-akar-icons-chevron-down-small"
@@ -63,5 +63,5 @@ withDefaults(
         </p>
       </div>
     </template>
-  </UAccordion>
+  </DdAccordion>
 </template>

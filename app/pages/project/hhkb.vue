@@ -24,7 +24,7 @@ useHead({
       canvas-class="w-full h-[500px]"
       :spline-url="splineUrl"
     />
-    <UTextarea
+    <DdTextarea
       class="w-full"
       padded
       size="xl"

@@ -62,6 +62,7 @@ export default defineNuxtConfig({
   },
   ui: {
     fonts: false,
+    prefix: 'Dd',
   },
   runtimeConfig: {
     public: {
@@ -75,7 +76,7 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    '/': { prerender: true },
+    '/**': { swr: 30 * 60 },
   },
   sourcemap: {
     server: true,

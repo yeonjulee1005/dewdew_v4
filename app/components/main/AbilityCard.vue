@@ -24,7 +24,7 @@ withDefaults(
 </script>
 
 <template>
-  <UCard
+  <DdCard
     :ui="{
       root: 'ring-0 shadow-none',
       body: 'flex flex-col gap-y-4',
@@ -89,5 +89,5 @@ withDefaults(
         />
       </div>
     </div>
-  </UCard>
+  </DdCard>
 </template>

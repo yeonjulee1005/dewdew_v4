@@ -67,7 +67,7 @@ useHead({
           v-if="doc._path !== '/blog'"
           id="comments"
           repo="yeonjulee1005/dewdew_v4"
-          repo-id="R_kgDOKjJUyA"
+          repo-id="R_kgDONZHIhA"
           category="Blog"
           category-id="DIC_kwDONZHIhM4Ck7BA"
           mapping="pathname"

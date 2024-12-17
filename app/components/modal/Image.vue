@@ -20,7 +20,7 @@ const imageModalTrigger = defineModel('imageModalTrigger', {
 </script>
 
 <template>
-  <UModal
+  <DdModal
     v-model:open="imageModalTrigger"
     :title="title"
     :fullscreen="isFullscreen"
@@ -39,5 +39,5 @@ const imageModalTrigger = defineModel('imageModalTrigger', {
     <template #body>
       <slot />
     </template>
-  </UModal>
+  </DdModal>
 </template>

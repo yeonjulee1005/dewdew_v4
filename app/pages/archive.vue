@@ -79,7 +79,7 @@ onMounted(() => {
       <p class="text-4xl font-bold">
         {{ $t('archive.title') }}
       </p>
-      <UButtonGroup
+      <DdButtonGroup
         class="w-full flex justify-end"
         :orientation="windowSize > 520 ? 'horizontal' : 'vertical'"
       >
@@ -93,7 +93,7 @@ onMounted(() => {
           :button-text="archive.title"
           @click="selectArchive(archive.id)"
         />
-      </UButtonGroup>
+      </DdButtonGroup>
       <ClientOnly>
         <Flicking
           :options="option"

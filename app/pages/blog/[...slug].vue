@@ -24,7 +24,7 @@ useHead({
 </script>
 
 <template>
-  <UContainer class="flex flex-col-reverse sm:flex-row gap-4 mt-40">
+  <DdContainer class="flex flex-col-reverse sm:flex-row gap-4 mt-40">
     <ContentNavigation v-slot="{ navigation }">
       <div class="min-w-fit h-fit flex flex-col gap-2 px-4 py-2 mt-10 rounded-lg ring-2 ring-indigo-200/50">
         <span
@@ -44,7 +44,7 @@ useHead({
         </NuxtLink>
       </div>
     </ContentNavigation>
-    <USeparator class="block mt-10 sm:hidden" />
+    <DdSeparator class="block mt-10 sm:hidden" />
     <ContentDoc
       v-slot="{ doc }"
       head
@@ -83,5 +83,5 @@ useHead({
         />
       </div>
     </ContentDoc>
-  </UContainer>
+  </DdContainer>
 </template>

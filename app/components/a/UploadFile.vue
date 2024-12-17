@@ -56,18 +56,18 @@ const uploadFile = (event: Event) => {
       :draggable="false"
       @contextmenu.prevent
     />
-    <UFormField
+    <DdFormField
       :label="$t('colorsTranslate.uploadFile')"
       size="xl"
       name="upload-file"
       :help="props.fileTypeAlarm.concat(', ', props.fileSizeAlarm)"
     >
-      <UInput
+      <DdInput
         class="w-full"
         type="file"
         trailing-icon="i-akar-icons-cloud-upload"
         @change="uploadFile"
       />
-    </UFormField>
+    </DdFormField>
   </div>
 </template>

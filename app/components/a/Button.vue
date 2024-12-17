@@ -54,7 +54,7 @@ withDefaults(
 </script>
 
 <template>
-  <UButton
+  <DdButton
     :class="customClass"
     :ui="{ base: buttonRounded ? buttonRounded : 'rounded-md' }"
     :disabled="buttonDisabled"
@@ -95,5 +95,5 @@ withDefaults(
         :name="iconTrailName"
       />
     </template>
-  </UButton>
+  </DdButton>
 </template>

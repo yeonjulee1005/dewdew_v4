@@ -36,7 +36,7 @@ const moveToNavigation = (url: string, isExternal: boolean) => {
         alt="logo"
         @click="moveToNavigation('/', false)"
       />
-      <USlideover
+      <DdSlideover
         v-model:open="slideoverTrigger"
         :close="{
           color: 'primary',
@@ -101,7 +101,7 @@ const moveToNavigation = (url: string, isExternal: boolean) => {
                 @click:button="moveToNavigation(menu.url ?? '', false)"
               />
             </div>
-            <USeparator />
+            <DdSeparator />
             <AForecast class="my-4" />
             <div class="flex items-center gap-x-2">
               <div
@@ -143,7 +143,7 @@ const moveToNavigation = (url: string, isExternal: boolean) => {
             </div>
           </div>
         </template>
-      </USlideover>
+      </DdSlideover>
     </div>
   </div>
 </template>

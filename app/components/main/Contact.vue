@@ -47,7 +47,7 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
 
 <template>
   <div class="w-full flex justify-center mt-50 px-6">
-    <UCard
+    <DdCard
       :ui="{
         root: 'w-fit sm:w-[600px] ring-indigo-400/50 divide-indigo-400/50',
       }"
@@ -62,13 +62,13 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
           <p class="text-2xl font-bold">
             {{ $t('main.email') }}
           </p>
-          <UForm
+          <DdForm
             class="flex flex-col gap-y-4"
             :schema="schema"
             :state="formData"
             @submit="onSubmit"
           >
-            <UFormField
+            <DdFormField
               name="name"
               size="xl"
               :label="$t('texts.name')"
@@ -79,8 +79,8 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
                 input-size="xl"
                 :input-placeholder="$t('placeholder.inputName')"
               />
-            </UFormField>
-            <UFormField
+            </DdFormField>
+            <DdFormField
               name="email"
               size="xl"
               :label="$t('texts.email')"
@@ -91,14 +91,14 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
                 input-size="xl"
                 :input-placeholder="$t('placeholder.inputEmail')"
               />
-            </UFormField>
-            <UFormField
+            </DdFormField>
+            <DdFormField
               name="message"
               size="xl"
               :label="$t('texts.message')"
               required
             >
-              <UTextarea
+              <DdTextarea
                 v-model="formData.message"
                 class="w-full"
                 size="xl"
@@ -106,7 +106,7 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
                 autoresize
                 :placeholder="$t('placeholder.inputContent')"
               />
-            </UFormField>
+            </DdFormField>
             <AButton
               button-block
               button-type="submit"
@@ -114,7 +114,7 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
               button-variant="subtle"
               :button-text="$t('texts.send')"
             />
-          </UForm>
+          </DdForm>
         </div>
       </template>
       <template #footer>
@@ -138,6 +138,6 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
           />
         </div>
       </template>
-    </UCard>
+    </DdCard>
   </div>
 </template>

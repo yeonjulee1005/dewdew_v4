@@ -13,7 +13,7 @@ const { resumeKoList, resumeEnList } = useResumeData()
         body: 'sm:p-0 p-0',
       }"
     >
-      <div class="flex flex-col md:flex-row gap-4">
+      <div class="flex flex-col md:flex-row gap-4 md:gap-10">
         <div class="flex flex-col items-center gap-y-12">
           <NuxtImg
             class="w-2/3 md:w-80 h-fit rounded-full ring-4 ring-indigo-400/50"

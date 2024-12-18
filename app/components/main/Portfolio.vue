@@ -50,7 +50,7 @@ const navigatePortfolio = (url: string) => {
           <Suspense>
             <ASplineCanvas
               v-if="item.dynamic_thumbnail_url"
-              canvas-class="w-[calc(100vw-48px)] h-auto sm:w-60 sm:h-60 object-cover rounded-xl ring-2 ring-indigo-400 dark:ring-indigo-400 hover:ring-4 hover:ring-indigo-400/70 hover:dark:ring-indigo-400/70 transition-ring duration-200 ease-in-out"
+              canvas-class="w-[calc(100vw-48px)] h-[calc(100vw-48px)] sm:w-60 sm:h-60 object-cover rounded-xl ring-2 ring-indigo-400 dark:ring-indigo-400 hover:ring-4 hover:ring-indigo-400/70 hover:dark:ring-indigo-400/70 transition-ring duration-200 ease-in-out"
               :spline-url="item.dynamic_thumbnail_url"
             />
           </Suspense>

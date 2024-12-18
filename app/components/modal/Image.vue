@@ -26,6 +26,7 @@ const imageModalTrigger = defineModel('imageModalTrigger', {
     :fullscreen="isFullscreen"
     :description="description"
     :prevent-close="preventClose"
+    close-icon="i-lucide-x"
     :close="{
       color: 'primary',
       variant: 'outline',

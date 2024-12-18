@@ -26,7 +26,7 @@ withDefaults(
 
 <template>
   <DdAccordion
-    class="px-10 gap-2"
+    class="gap-2"
     type="multiple"
     open-icon="i-akar-icons-chevron-down-small"
     close-icon="i-akar-icons-chevron-up-small"

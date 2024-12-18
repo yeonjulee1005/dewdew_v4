@@ -48,6 +48,7 @@ const countDisplay = (index: number, _count: number): void => {
     v-model:open="leaveDialogTrigger"
     :title="$t('messages.leavePage')"
     :description="$t('messages.leavePageDesc')"
+    close-icon="i-lucide-x"
     :close="{
       color: 'primary',
       variant: 'outline',

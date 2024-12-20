@@ -34,7 +34,7 @@ const moveToNavigation = (url: string, isExternal: boolean) => {
         loading="eager"
         :quality="80"
         alt="logo"
-        @click="moveToNavigation('/', false)"
+        @click="moveToNavigation('/main', false)"
       />
       <DdSlideover
         v-model:open="slideoverTrigger"

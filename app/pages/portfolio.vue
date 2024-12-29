@@ -121,7 +121,7 @@ onMounted(() => {
       <div class="flex justify-center">
         <NuxtImg
           :src="selectedPortfolioData.description_image_url ?? ''"
-          class="max-h-[400px] w-auto"
+          class="max-h-[800px] w-auto"
           format="webp"
           fit="cover"
           :alt="selectedPortfolioData.alt ?? ''"

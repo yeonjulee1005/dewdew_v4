@@ -76,7 +76,15 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    '/**': { ssr: true, prerender: true },
+    '/**': { ssr: true },
+    '/blog': {
+      ssr: true,
+      prerender: true,
+    },
+    '/blog/**': {
+      ssr: true,
+      prerender: true,
+    },
   },
   sourcemap: {
     server: true,
@@ -176,7 +184,7 @@ export default defineNuxtConfig({
       periodicSyncForUpdates: 20,
     },
     devOptions: {
-      enabled: false,
+      enabled: true,
       suppressWarnings: true,
       navigateFallbackAllowlist: [/^\/$/],
       type: 'module',

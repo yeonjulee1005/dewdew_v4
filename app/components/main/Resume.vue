@@ -6,7 +6,7 @@ const { resumeKoList, resumeEnList } = useResumeData()
 </script>
 
 <template>
-  <div class="w-full flex justify-center mt-50 px-6">
+  <div class="w-full flex justify-center mt-20 sm:mt-50 px-6">
     <DdCard
       :ui="{
         root: 'w-full max-w-[1200px] ring-0 shadow-none py-6',

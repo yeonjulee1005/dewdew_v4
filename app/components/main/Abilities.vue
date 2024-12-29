@@ -108,7 +108,7 @@ const usedTools = ref([
 </script>
 
 <template>
-  <div class="w-full flex justify-center mt-50 px-6">
+  <div class="w-full flex justify-center mt-20 sm:mt-50 px-6">
     <DdCard
       :ui="{
         root: 'w-full max-w-[1200px] ring-indigo-400/50 divide-indigo-400/50',

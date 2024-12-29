@@ -1,6 +1,9 @@
 <template>
   <div :class="['class']">
-    <ContentSlot :use="$slots.default" />
+    <ContentSlot
+      :use="$slots.default"
+      unwrap="p"
+    />
   </div>
 </template>
 
@@ -137,6 +140,7 @@
   padding: 0 8px;
   color: #4649e5;
   transition: color 0.2s ease-in-out;
+  margin-top: 4px;
   &:hover {
     color: #a5a7fc;
   }

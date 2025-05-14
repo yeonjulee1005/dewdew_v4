@@ -26,29 +26,29 @@ head:
       content: '© 2023 Dewdew'
 ---
 
-::card{class="content-card"}
+::card{className="content-card"}
 기술 외적인 포스팅(개발회고, 일상 이야기 등)을 올리기 위한 블로그입니다.<br>
 본 블로그는 [Nuxt Content](https://content.nuxt.com/)를 이용하여, `markdown`으로 간편하게 작성할 수 있도록 구현되였습니다.
 <hr />
 ::
 
-::card{class="content-card"}
+::card{className="content-card"}
 ### 발행된 블로그 리스트입니다.
 ::
 
-::card{class="menu-list"}
+::card{className="menu-list"}
 - #### [2024년 12월 회고 (20241205)](/blog/20241205)
 ::
-::card{class="menu-list"}
+::card{className="menu-list"}
 - #### [2024년 2월 회고 (20240301)](/blog/20240301)
 ::
-::card{class="menu-list"}
+::card{className="menu-list"}
 - #### [2024년 1월 회고 (20240203)](/blog/20240203)
 ::
-::card{class="menu-list"}
+::card{className="menu-list"}
 - #### [2023년을 회고하며...(20231229)](/blog/20231229)
 ::
 
-::card{class="content-image"}
+::card{className="content-image"}
 ![23년 도쿄](https://api.dewdew.dev/storage/v1/object/public/blog/index-cover.webp)
 ::

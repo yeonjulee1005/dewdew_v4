@@ -6,7 +6,7 @@ labels: bug
 assignees: yeonjulee1005
 ---
 
-[2023-10-23 13:00(KO)]
+[2025-05-14 13:00(KO)]
 > Assignees: {{ 닉네임 }}
 
 # Title

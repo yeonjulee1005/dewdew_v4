@@ -1,8 +1,8 @@
-![Dewdew](./.github/assets/dewdew.jpg)
+![Dewdew](./.github/assets/logo_github.png)
 
 ## 안녕하세요. FE 개발자 이연주 입니다.
 
-## Current Version: 3.0.0
+## Current Version: 3.11.0
 
 ## 🖥️ 사용한 스킬은 아래와 같습니다.
 

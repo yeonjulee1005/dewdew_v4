@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/i18n',
-    'nuxt-time',
+    'nuxt-og-image',
     '@vite-pwa/nuxt',
     '@vueuse/nuxt',
     '@pinia/nuxt',
@@ -51,12 +51,16 @@ export default defineNuxtConfig({
     fallback: 'system',
   },
   content: {
-    highlight: {
-      preload: ['js', 'ts', 'json', 'vue'],
-      theme: {
-        default: 'github-light',
-        dark: 'github-dark',
-        sepia: 'dracula-soft',
+    build: {
+      markdown: {
+        highlight: {
+          preload: ['js', 'ts', 'json', 'vue'],
+          theme: {
+            default: 'github-light',
+            dark: 'github-dark',
+            sepia: 'dracula-soft',
+          },
+        },
       },
     },
   },

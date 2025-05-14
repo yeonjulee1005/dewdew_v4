@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     const { data, error }: SerializeObject = await createClient(config.public.supabaseUrl, config.public.supabaseKey, { db: { schema } })
       .from(tableName)
       .select('*')
-      .order('index', { ascending: true })
+      .order('index', { ascending: false })
       .eq('deleted', false)
 
     if (error) {

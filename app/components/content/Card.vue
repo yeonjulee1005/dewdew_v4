@@ -1,9 +1,10 @@
+<script setup lang="ts">
+defineProps(['className'])
+</script>
+
 <template>
-  <div :class="['class']">
-    <ContentSlot
-      :use="$slots.default"
-      unwrap="p"
-    />
+  <div :class="[className]">
+    <slot mdc-unwrap="p" />
   </div>
 </template>
 

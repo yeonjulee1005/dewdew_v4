@@ -3,7 +3,7 @@ const { locale } = useCustomLocale()
 
 withDefaults(
   defineProps<{
-    dateTime?: string | ComputedRef<string> | null
+    dateTime?: string | ComputedRef<string> | Date | null
     fullDateTime?: boolean
     capitalDateTime?: boolean
   }>(),

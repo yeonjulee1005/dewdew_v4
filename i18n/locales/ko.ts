@@ -120,7 +120,31 @@ export default {
     inputPlaceholder: '영어로 작성하거나 마우스로 키보드를 클릭하면, 아래의 3D 모델링된 hhkb 키보드가 동작합니다.',
   },
   portfolio: {
-    PFC001: {
+    PFC020: {
+      title: 'Wheels & Meets',
+      description: [
+        'Nuxt3, Supabase를 이용하여 개발한 모터사이클 재능기부 및 커뮤니티 서비스 입니다.',
+        '현재 서비스 진행중이며, 고도화 중입니다.',
+      ],
+      stack: [
+        'Nuxt3(FE)와 Supabase(BE)를 이용하여 서비스 구축 / Vercel을 통한 서비스 배포 / AWS Lambda & VPC를 통한 금융권 API연동',
+        '신한은행 Open Api (이체기능 구현) / Nice For Start (결제기능 구현) / kakaoMaps / PostCode (위치기반 검색기능 구현)',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
+    },
+    PFC019: {
+      title: '굿노드 관리자페이지',
+      description: [
+        '굿노드주식회사에서 관리하고 있는 서비스 (휠즈앤밋츠, 회사소개페이지 등 확장중)의 종합 관리 페이지입니다.',
+        '현재 서비스 진행중이며, 고도화 중입니다.',
+      ],
+      stack: [
+        'Nuxt3(FE)와 Supabase(BE)를 이용하여 서비스 구축 / Vercel을 통한 서비스 배포',
+        '통계관리/회원관리/게시물관리/광고관리/채팅관리/결제관리/기타설정(관리자등급설정 등)',
+        '개발 참여: FE: 100% / BE: 100%',
+      ],
+    },
+    PFC018: {
       title: '굿노드 주식회사',
       description: [
         'Nuxt3, Supabase를 이용하여 개발한 굿노드 주식회사의 소개페이지 입니다.',
@@ -131,7 +155,7 @@ export default {
         '개발 참여: FE: 100% / BE: 100%',
       ],
     },
-    PFC002: {
+    PFC017: {
       title: '듀비',
       description: [
         '1인 사이드 프로젝트로 진행한 여유자금 지출관리 서비스 입니다.',
@@ -142,7 +166,7 @@ export default {
         '개발 참여: FE: 100% / BE: 100%',
       ],
     },
-    PFC003: {
+    PFC016: {
       title: '픽셀 체커',
       description: [
         '1인 사이드 프로젝트로 진행한 모니터 픽셀 체크 서비스 입니다.',
@@ -153,7 +177,7 @@ export default {
         '개발 참여: FE: 100% / BE: 100%',
       ],
     },
-    PFC004: {
+    PFC015: {
       title: '듀듀 월드',
       description: [
         'Astro를 이용하여 개발한 정적 웹사이트 입니다. 개인 개발 블로그입니다.',
@@ -163,7 +187,7 @@ export default {
         '개발 참여: FE: 100% / BE: 100%',
       ],
     },
-    PFC005: {
+    PFC014: {
       title: '두람쥐',
       description: [
         '1인 사이드 프로젝트로 진행한 이륜자동차 차계부 서비스 입니다.',
@@ -175,7 +199,7 @@ export default {
         '개발 참여: FE: 100% / BE: 100%',
       ],
     },
-    PFC006: {
+    PFC013: {
       title: '가제트코리아',
       description: [
         'Nuxt3, Supabase를 이용하여 개발한 가제트코리아 회사소개 페이지 입니다.',
@@ -186,7 +210,7 @@ export default {
         '개발 참여: FE: 100% / BE: 100%',
       ],
     },
-    PFC007: {
+    PFC012: {
       title: '가제트코리아 CRM',
       description: [
         'Nuxt3, Supabase를 사용하여 개발한 가제트코리아 소개페이지를 관리하는 백오피스(CRM) 페이지 입니다.',
@@ -197,7 +221,7 @@ export default {
         '개발 참여: FE: 100% / BE: 100%',
       ],
     },
-    PFC008: {
+    PFC011: {
       title: '유심사',
       description: [
         'Nuxt3를 사용하여 개발한 로밍 eSim 서비스 페이지 입니다.',
@@ -209,7 +233,7 @@ export default {
         '개발 참여: FE: 90% / BE: 5%',
       ],
     },
-    PFC009: {
+    PFC010: {
       title: '유심사 CRM',
       description: [
         'Nuxt3를 사용하여 개발한 유심사 관리자페이지 입니다.',
@@ -220,7 +244,7 @@ export default {
         '개발 참여: FE: 90% / BE: 5%',
       ],
     },
-    PFC010: {
+    PFC009: {
       title: '유심사 파트너페이지',
       description: [
         'Nuxt3 를 사용하여 개발한 유심사 파트너스 관리자페이지 입니다.',
@@ -231,7 +255,7 @@ export default {
         '개발 참여: FE: 90% / BE: 5%',
       ],
     },
-    PFC011: {
+    PFC008: {
       title: '유심사 대시보드',
       description: [
         'Nuxt3, eCharts를 이용하여 개발한 유심사 판매현황 그래프 모음입니다.',
@@ -242,7 +266,7 @@ export default {
         '개발 참여: FE: 90% / BE: 5%',
       ],
     },
-    PFC012: {
+    PFC007: {
       title: '아브로소프트 코리아',
       description: [
         'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
@@ -252,7 +276,7 @@ export default {
         '개발 참여: FE: 60%',
       ],
     },
-    PFC013: {
+    PFC006: {
       title: '인사관리플렛폼',
       description: [
         'Nuxt2, Node.js를 이용한 클라우드기반 노무인사관리플랫폼의 홍보페이지 및 사용자페이지 입니다.',
@@ -262,7 +286,7 @@ export default {
         '개발 참여: FE: 70%',
       ],
     },
-    PFC014: {
+    PFC005: {
       title: '두원',
       description: [
         'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
@@ -272,7 +296,7 @@ export default {
         '개발 참여: FE: 60%',
       ],
     },
-    PFC015: {
+    PFC004: {
       title: '오리젠',
       description: [
         'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
@@ -282,7 +306,7 @@ export default {
         '개발 참여: FE: 60%',
       ],
     },
-    PFC016: {
+    PFC003: {
       title: '우조',
       description: [
         'PHP와 Javascript 기반의 반응형 웹페이지 입니다.',
@@ -292,7 +316,7 @@ export default {
         '개발 참여: FE: 60%',
       ],
     },
-    PFC017: {
+    PFC002: {
       title: '인베니아',
       description: [
         '자사 래거시 사이트 유지보수',
@@ -302,7 +326,7 @@ export default {
         '개발 참여: FE: 40%',
       ],
     },
-    PFC018: {
+    PFC001: {
       title: '베가',
       description: [
         '자바스크립트 기반의 반응형 웹페이지 입니다.',

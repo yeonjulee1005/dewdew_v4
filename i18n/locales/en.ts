@@ -120,7 +120,31 @@ export default {
     inputPlaceholder: 'If you write in English or click the keyboard with the mouse, the 3D modeled hhkb keyboard will work below.',
   },
   portfolio: {
-    PFC001: {
+    PFC020: {
+      title: 'Wheels & Meets',
+      description: [
+        'A motorcycle talent donation and community service developed using Nuxt3 and Supabase.',
+        'The service is currently ongoing and is being enhanced.',
+      ],
+      stack: [
+        'Service built using Nuxt3 (FE) and Supabase (BE) / Deployed via Vercel / Financial API integration using AWS Lambda & VPC',
+        'Shinhan Bank Open API (Transfer function implementation) / Nice For Start (Payment function implementation) / kakaoMaps / PostCode (Location-based search function implementation)',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
+    },
+    PFC019: {
+      title: 'Goodnode Admin Page',
+      description: [
+        'A comprehensive management page for services managed by Goodnode Co., Ltd. (including Wheels & Meets, company introduction page, etc.).',
+        'The service is currently ongoing and is being enhanced.',
+      ],
+      stack: [
+        'Service built using Nuxt3 (FE) and Supabase (BE) / Deployed via Vercel',
+        'Statistics management / Member management / Post management / Advertisement management / Chat management / Payment management / Other settings (Administrator level settings, etc.)',
+        'Development participation: FE: 100% / BE: 100%',
+      ],
+    },
+    PFC018: {
       title: 'Goodnodes Co., Ltd.',
       description: [
         'Introduction page of Goodnodes Co., Ltd. developed using Nuxt3 and Supabase.',
@@ -131,7 +155,7 @@ export default {
         'Development participation: FE: 100% / BE: 100%',
       ],
     },
-    PFC002: {
+    PFC017: {
       title: 'Dewbee',
       description: [
         'Personal side project for managing surplus funds.',
@@ -142,7 +166,7 @@ export default {
         'Development participation: FE: 100% / BE: 100%',
       ],
     },
-    PFC003: {
+    PFC016: {
       title: 'Pixel Checker',
       description: [
         'Personal side project for checking monitor pixels.',
@@ -153,7 +177,7 @@ export default {
         'Development participation: FE: 100% / BE: 100%',
       ],
     },
-    PFC004: {
+    PFC015: {
       title: 'Dewdew World',
       description: [
         'Static website developed using Astro. It is a personal development blog.',
@@ -163,7 +187,7 @@ export default {
         'Development participation: FE: 100% / BE: 100%',
       ],
     },
-    PFC005: {
+    PFC014: {
       title: 'Dooramg',
       description: [
         'Personal side project for managing motorcycle maintenance records.',
@@ -175,7 +199,7 @@ export default {
         'Development participation: FE: 100% / BE: 100%',
       ],
     },
-    PFC006: {
+    PFC013: {
       title: 'Gadget Korea',
       description: [
         'Company introduction page of Gadget Korea developed using Nuxt3 and Supabase.',
@@ -186,7 +210,7 @@ export default {
         'Development participation: FE: 100% / BE: 100%',
       ],
     },
-    PFC007: {
+    PFC012: {
       title: 'Gadget Korea CRM',
       description: [
         'Back-office (CRM) page for managing the introduction page of Gadget Korea developed using Nuxt3 and Supabase.',
@@ -197,7 +221,7 @@ export default {
         'Development participation: FE: 100% / BE: 100%',
       ],
     },
-    PFC008: {
+    PFC011: {
       title: 'Usimsa',
       description: [
         'Roaming eSim service page developed using Nuxt3.',
@@ -209,7 +233,7 @@ export default {
         'Development participation: FE: 90% / BE: 5%',
       ],
     },
-    PFC009: {
+    PFC010: {
       title: 'Usimsa CRM',
       description: [
         'Admin page of Usimsa developed using Nuxt3.',
@@ -220,7 +244,7 @@ export default {
         'Development participation: FE: 90% / BE: 5%',
       ],
     },
-    PFC010: {
+    PFC009: {
       title: 'Usimsa Partner Page',
       description: [
         'Usimsa Partners admin page developed using Nuxt3.',
@@ -231,7 +255,7 @@ export default {
         'Development participation: FE: 90% / BE: 5%',
       ],
     },
-    PFC011: {
+    PFC008: {
       title: 'Usimsa Dashboard',
       description: [
         'Collection of Usimsa sales status graphs developed using Nuxt3 and eCharts.',
@@ -242,7 +266,7 @@ export default {
         'Development participation: FE: 90% / BE: 5%',
       ],
     },
-    PFC012: {
+    PFC007: {
       title: 'Avrosoft Korea',
       description: [
         'Responsive web page based on PHP and Javascript.',
@@ -252,7 +276,7 @@ export default {
         'Development participation: FE: 60%',
       ],
     },
-    PFC013: {
+    PFC006: {
       title: 'HR Management Platform',
       description: [
         'Promotional page and user page of a cloud-based labor and HR management platform developed using Nuxt2 and Node.js.',
@@ -262,7 +286,7 @@ export default {
         'Development participation: FE: 70%',
       ],
     },
-    PFC014: {
+    PFC005: {
       title: 'Doowon',
       description: [
         'Responsive web page based on PHP and Javascript.',
@@ -272,7 +296,7 @@ export default {
         'Development participation: FE: 60%',
       ],
     },
-    PFC015: {
+    PFC004: {
       title: 'Orijen',
       description: [
         'Responsive web page based on PHP and Javascript.',
@@ -282,7 +306,7 @@ export default {
         'Development participation: FE: 60%',
       ],
     },
-    PFC016: {
+    PFC003: {
       title: 'Woozo',
       description: [
         'Responsive web page based on PHP and Javascript.',
@@ -292,7 +316,7 @@ export default {
         'Development participation: FE: 60%',
       ],
     },
-    PFC017: {
+    PFC002: {
       title: 'Invenia',
       description: [
         'Maintenance of the company\'s legacy site',
@@ -302,7 +326,7 @@ export default {
         'Development participation: FE: 40%',
       ],
     },
-    PFC018: {
+    PFC001: {
       title: 'Bega',
       description: [
         'Responsive web page based on Javascript.',

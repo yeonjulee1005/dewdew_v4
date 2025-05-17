@@ -15,11 +15,14 @@ useHead({
 })
 
 const { data: blog } = await useAsyncData(route.path, () => {
-  return queryCollection('blog').path(route.path).first()
+  return queryCollection('blog')
+    .path(route.path)
+    .first()
 })
 
 const { data: navigation } = await useAsyncData('navigation', () => {
   return queryCollectionNavigation('blog')
+    .order('date', 'DESC')
 })
 </script>
 

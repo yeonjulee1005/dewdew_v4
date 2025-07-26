@@ -113,6 +113,7 @@ const moveToNavigation = (url: string, isExternal: boolean) => {
               >
                 <AButton
                   v-if="subMenu.code === 'SMC007' || subMenu.code === 'SMC008'"
+                  custom-class="gap-0"
                   button-variant="ghost"
                   use-leading
                   :icon-lead-name="subMenu.icon ?? ''"

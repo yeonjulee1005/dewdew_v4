@@ -41,12 +41,14 @@
         </div>
         <div class="flex justify-end gap-2">
           <AButton
+            custom-class="gap-0"
             :button-text="$t('pwa.install')"
             button-variant="outline"
             button-size="md"
             @click="$pwa.install()"
           />
           <AButton
+            custom-class="gap-0"
             :button-text="$t('pwa.cancel')"
             button-variant="outline"
             button-size="md"

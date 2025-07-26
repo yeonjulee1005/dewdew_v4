@@ -157,7 +157,7 @@ initColorData()
         :limit-size="10"
       />
       <AButton
-        custom-class="flex justify-center text-xl"
+        custom-class="flex justify-center text-xl gap-0"
         button-size="xl"
         button-variant="subtle"
         use-leading
@@ -222,7 +222,7 @@ initColorData()
         />
       </DdFormField>
       <AButton
-        custom-class="submit-button flex justify-center text-xl"
+        custom-class="submit-button flex justify-center text-xl gap-0"
         button-variant="subtle"
         button-size="xl"
         :button-text="$t('texts.regenerate')"

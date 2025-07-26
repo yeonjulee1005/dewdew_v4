@@ -76,7 +76,7 @@ defineEmits([
   >
     <DdButton
       :class="customClass"
-      :ui="{ base: buttonRounded ? buttonRounded : 'rounded-md', label: buttonLabelClass }"
+      :ui="{ base: buttonRounded ? buttonRounded : 'rounded-md', label: buttonLabelClass, container: 'gap-0' }"
       :disabled="buttonDisabled"
       :block="buttonBlock"
       :truncate="buttonTruncate"

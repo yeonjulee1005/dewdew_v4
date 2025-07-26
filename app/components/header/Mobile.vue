@@ -49,6 +49,7 @@ const moveToNavigation = (url: string, isExternal: boolean) => {
         }"
       >
         <AButton
+          custom-class="gap-0"
           use-leading
           button-size="xl"
           button-variant="ghost"
@@ -71,6 +72,7 @@ const moveToNavigation = (url: string, isExternal: boolean) => {
             />
             <AButton
               button-variant="subtle"
+              custom-class="gap-0"
               button-size="xl"
               use-leading
               icon-lead-name="i-akar-icons-circle-x"
@@ -136,10 +138,14 @@ const moveToNavigation = (url: string, isExternal: boolean) => {
                 </div>
               </div>
               <AThemeChange
-                custom-class="w-7 h-7"
+                custom-class="gap-0"
+                icon-lead-class="w-7 h-7"
                 button-variant="ghost"
               />
-              <ALanguageChange custom-class="w-8 h-8" />
+              <ALanguageChange
+                custom-class="gap-0"
+                icon-lead-class="w-8 h-8"
+              />
             </div>
           </div>
         </template>

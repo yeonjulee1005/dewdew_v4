@@ -4,10 +4,12 @@ const colorMode = useColorMode()
 withDefaults(
   defineProps<{
     customClass?: string
+    iconLeadClass?: string
     buttonVariant?: 'solid' | 'link' | 'outline' | 'soft' | 'subtle' | 'ghost'
   }>(),
   {
-    customClass: 'w-8 h-8',
+    customClass: '',
+    iconLeadClass: 'w-8 h-8',
     buttonVariant: 'subtle',
   },
 )
@@ -25,10 +27,11 @@ const isDark = computed({
 <template>
   <AButton
     use-leading
+    :class="customClass"
     :button-variant="buttonVariant"
     button-size="xl"
     :icon-lead-name="isDark ? 'i-akar-icons-moon' : 'i-akar-icons-sun'"
-    :icon-lead-class="customClass"
+    :icon-lead-class="iconLeadClass"
     @click="isDark = !isDark"
   />
 </template>

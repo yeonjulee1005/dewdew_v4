@@ -101,6 +101,8 @@ export default {
     kakao: '카카오톡으로 연락하기',
     linkedin: 'Linkedin으로 연락하기',
     email: 'Email',
+    coffeeChat: 'Coffee Chat ☕️',
+    reservation: '커피쳇 약속잡기',
   },
   colorsTranslate: {
     dropper: '스포이드',

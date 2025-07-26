@@ -80,7 +80,6 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    '/**': { prerender: true },
     '/blog': {
       prerender: true,
     },
@@ -144,14 +143,6 @@ export default defineNuxtConfig({
   },
   image: {
     format: ['svg', 'png', 'jpg', 'jpeg', 'webp'],
-    screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-    },
   },
   ogImage: {
     fonts: [

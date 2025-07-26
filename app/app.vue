@@ -33,7 +33,7 @@ useHead({
     }
 
     return !title.includes(t('pageTitle.dewdew'))
-      ? t('pageTitle.dewdew').concat(' | ', title)
+      ? t('pageTitle.dewdew').concat(' | ', t(title))
       : title
   },
   link: [

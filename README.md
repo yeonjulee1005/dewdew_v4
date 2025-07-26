@@ -1,14 +1,14 @@
 ![Dewdew](./.github/assets/logo_github.png)
 
-## 안녕하세요. FE 개발자 이연주 입니다.
+## 안녕하세요. Software Engineer 이연주 입니다.
 
-## Current Version: 3.11.0
+## Current Version: 3.12.0
 
 ## 🖥️ 사용한 스킬은 아래와 같습니다.
 
 [![My Skills](https://skillicons.dev/icons?i=nuxtjs,vue,supabase,vercel,vite,ts,js,postgres,html,sass,vscode,vim,github)](https://skillicons.dev)
 
-1. Nuxt3
+1. Nuxt4
 2. Nuxt Modules (UI, Content, Image, Device, ColorMode, Time, i18n, Seo)
 3. Supabase
 4. Pinia
@@ -23,12 +23,14 @@
 13. 공공 Api
 
 ## Package manager
-
 > Bun
 
 ---
 
 ## 페이지 소개
+
+> [!question] 개발자 이연주의 웹페이지 입니다.
+> 기본적인 PR 및 포트폴리오, 회고 등이 포함된 블로그, 사진기록들을 보관하고 있습니다.
 
 - #### 메인페이지
   > 기본적인 자기소개 및 작업물 소개, 연락방법 등을 간단히 표현되어 있습니다.

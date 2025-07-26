@@ -18,13 +18,14 @@ export const useResumeData = () => {
     },
     {
       icon: 'i-akar-icons-jar',
-      label: '[2024.07 ~ Current] 굿노드주식회사',
+      label: '[2024.07 ~ 2025.06] 굿노드주식회사',
       slot: 'career',
       description: [
-        'CTO',
+        'Tech Lead (Acting CTO)',
         'Wheels & Meets 서비스 개발총괄 (Nuxt3, Supabase, AWS)',
         '굿노드 주식회사 웹사이트 개발 (Nuxt3, Supabase)',
-        '워크스페이스 관리',
+        'Wheels & Meets 서비스 및 굿노드 웹사이트 관리용 CRM 개발 (Nuxt3, Supabase)',
+        '전사 워크스페이스 구축 및 관리',
       ],
     },
     {
@@ -33,7 +34,7 @@ export const useResumeData = () => {
       slot: 'career',
       description: [
         'CTO',
-        '두람쥐 서비스 상용화 개발 총괄',
+        '두람쥐 서비스 상용화 및 서비스 확장 진행',
       ],
     },
     {

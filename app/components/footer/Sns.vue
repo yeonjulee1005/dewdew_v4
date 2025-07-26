@@ -11,7 +11,7 @@ const { viewMenuData } = storeToRefs(useMenuStore())
     <ATooltipButton
       v-for="(menu, index) in viewMenuData?.[0]?.subMenuList as MenuDatabase['menu']['Tables']['subMenu']['Row'][]"
       :key="index"
-      :custom-class="menu.code !== 'SMC009' ? 'hidden' : 'flex items-center justify-center w-11 h-11'"
+      :custom-class="menu.code !== 'SMC009' ? 'hidden' : 'flex items-center justify-center gap-0 w-11 h-11'"
       use-leading
       :image-url="url(true, menu.image_url ?? '')"
       button-size="lg"
@@ -23,7 +23,7 @@ const { viewMenuData } = storeToRefs(useMenuStore())
     <ATooltipButton
       v-for="(menu, index) in viewMenuData?.[0]?.subMenuList as MenuDatabase['menu']['Tables']['subMenu']['Row'][]"
       :key="index"
-      :custom-class="menu.code === 'SMC009' ? 'hidden' : 'flex items-center justify-center w-11 h-11'"
+      :custom-class="menu.code === 'SMC009' ? 'hidden' : 'flex items-center justify-center gap-0 w-11 h-11'"
       use-leading
       :icon-lead-name="menu.icon ?? ''"
       icon-lead-class="w-6 h-6"

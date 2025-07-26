@@ -27,7 +27,7 @@ const isDark = computed({
 <template>
   <AButton
     use-leading
-    :class="customClass"
+    :custom-class="customClass"
     :button-variant="buttonVariant"
     button-size="xl"
     :icon-lead-name="isDark ? 'i-akar-icons-moon' : 'i-akar-icons-sun'"

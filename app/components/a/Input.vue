@@ -43,6 +43,7 @@ const inputValue = defineModel('inputValue', {
       <div class="space-x-1">
         <AButton
           v-show="!inputValue"
+          custom-class="gap-0"
           :button-size="trailingButtonSize"
           button-variant="ghost"
           use-leading
@@ -52,6 +53,7 @@ const inputValue = defineModel('inputValue', {
         />
         <AButton
           v-if="useCopy"
+          custom-class="gap-0"
           :button-size="trailingButtonSize"
           button-variant="ghost"
           use-leading

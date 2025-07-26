@@ -58,63 +58,77 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
         </p>
       </template>
       <template #default>
-        <div class="w-full flex flex-col gap-y-2">
-          <p class="text-2xl font-bold">
-            {{ $t('main.email') }}
-          </p>
-          <DdForm
-            class="flex flex-col gap-y-4"
-            :schema="schema"
-            :state="formData"
-            @submit="onSubmit"
-          >
-            <DdFormField
-              name="name"
-              size="xl"
-              :label="$t('texts.name')"
-              required
-            >
-              <AInput
-                v-model:input-value="formData.name"
-                input-size="xl"
-                :input-placeholder="$t('placeholder.inputName')"
-              />
-            </DdFormField>
-            <DdFormField
-              name="email"
-              size="xl"
-              :label="$t('texts.email')"
-              required
-            >
-              <AInput
-                v-model:input-value="formData.email"
-                input-size="xl"
-                :input-placeholder="$t('placeholder.inputEmail')"
-              />
-            </DdFormField>
-            <DdFormField
-              name="message"
-              size="xl"
-              :label="$t('texts.message')"
-              required
-            >
-              <DdTextarea
-                v-model="formData.message"
-                class="w-full"
-                size="xl"
-                :rows="5"
-                autoresize
-                :placeholder="$t('placeholder.inputContent')"
-              />
-            </DdFormField>
+        <div class="w-full flex flex-col gap-y-4">
+          <div class="w-full flex flex-wrap items-center gap-2">
+            <p class="text-2xl font-bold">
+              {{ $t('main.coffeeChat') }}
+            </p>
             <AButton
-              button-block
-              button-type="submit"
+              button-variant="ghost"
+              custom-class="text-center text-2xl font-bold w-fit"
               button-size="xl"
-              button-variant="subtle"
-              :button-text="$t('texts.send')"
+              :button-text="$t('main.reservation')"
+              @click="navigateTo('https://cal.com/dewdew/60min?user=dewdew&overlayCalendar=true', { external: true, open: { target: '_blank' } })"
             />
-          </DdForm>
+          </div>
+          <div class="w-full flex flex-col gap-y-2">
+            <p class="text-2xl font-bold">
+              {{ $t('main.email') }}
+            </p>
+            <DdForm
+              class="flex flex-col gap-y-4"
+              :schema="schema"
+              :state="formData"
+              @submit="onSubmit"
+            >
+              <DdFormField
+                name="name"
+                size="xl"
+                :label="$t('texts.name')"
+                required
+              >
+                <AInput
+                  v-model:input-value="formData.name"
+                  input-size="xl"
+                  :input-placeholder="$t('placeholder.inputName')"
+                />
+              </DdFormField>
+              <DdFormField
+                name="email"
+                size="xl"
+                :label="$t('texts.email')"
+                required
+              >
+                <AInput
+                  v-model:input-value="formData.email"
+                  input-size="xl"
+                  :input-placeholder="$t('placeholder.inputEmail')"
+                />
+              </DdFormField>
+              <DdFormField
+                name="message"
+                size="xl"
+                :label="$t('texts.message')"
+                required
+              >
+                <DdTextarea
+                  v-model="formData.message"
+                  class="w-full"
+                  size="xl"
+                  :rows="5"
+                  autoresize
+                  :placeholder="$t('placeholder.inputContent')"
+                />
+              </DdFormField>
+              <AButton
+                button-block
+                button-type="submit"
+                button-size="xl"
+                button-variant="subtle"
+                :button-text="$t('texts.send')"
+              />
+            </DdForm>
+          </div>
         </div>
       </template>
       <template #footer>

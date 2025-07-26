@@ -4,10 +4,12 @@ const { locale, setLocale } = useCustomLocale()
 withDefaults(
   defineProps<{
     customClass?: string
+    iconLeadClass?: string
     buttonVariant?: 'solid' | 'link' | 'outline' | 'soft' | 'subtle' | 'ghost'
   }>(),
   {
-    customClass: 'w-8 h-8',
+    customClass: '',
+    iconLeadClass: 'w-8 h-8',
     buttonVariant: 'ghost',
   },
 )
@@ -25,10 +27,11 @@ const selectLocale = computed({
 <template>
   <AButton
     use-leading
+    :class="customClass"
     :button-variant="buttonVariant"
     button-size="xl"
     :icon-lead-name="selectLocale === 'ko' ? 'i-circle-flags-kr' : 'i-circle-flags-us'"
-    :icon-lead-class="customClass"
+    :icon-lead-class="iconLeadClass"
     @click="selectLocale = selectLocale === 'ko' ? 'en' : 'ko'"
   />
 </template>

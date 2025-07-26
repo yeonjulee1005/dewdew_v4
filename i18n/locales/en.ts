@@ -101,6 +101,8 @@ export default {
     kakao: 'Contact via Kakao Talk',
     linkedin: 'Contact via Linkedin',
     email: 'Email',
+    coffeeChat: 'Coffee Chat ☕️',
+    reservation: 'Coffee Chat Reservation',
   },
   colorsTranslate: {
     dropper: 'Dropper',

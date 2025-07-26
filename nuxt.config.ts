@@ -80,13 +80,11 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    '/**': { ssr: true },
+    '/**': { prerender: true },
     '/blog': {
-      ssr: true,
       prerender: true,
     },
     '/blog/**': {
-      ssr: true,
       prerender: true,
     },
   },
@@ -109,13 +107,6 @@ export default defineNuxtConfig({
     },
   },
   vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: 'modern-compiler',
-        },
-      },
-    },
     build: {
       sourcemap: true,
       cssMinify: true,
@@ -153,6 +144,14 @@ export default defineNuxtConfig({
   },
   image: {
     format: ['svg', 'png', 'jpg', 'jpeg', 'webp'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+    },
   },
   ogImage: {
     fonts: [

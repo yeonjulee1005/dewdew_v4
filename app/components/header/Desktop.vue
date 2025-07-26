@@ -39,7 +39,7 @@ const { windowSize } = storeToRefs(useWindowStore())
           {{ $t(`menu.${menu.code}`) }}
         </NuxtLink>
       </div>
-      <div class="flex flex-col items-start gap-y-1">
+      <div class="flex flex-col items-start gap-y-3">
         <div class="flex items-center gap-x-2">
           <div
             v-for="(subMenu, index) in viewMenuData?.[0]?.subMenuList as MenuDatabase['menu']['Tables']['subMenu']['Row'][]"

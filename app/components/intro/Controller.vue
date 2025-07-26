@@ -8,6 +8,6 @@
       :button-text="$t('button.moveMain')"
       @click:button="navigateTo('/main')"
     />
-    <AThemeChange />
+    <AThemeChange custom-class="gap-0" />
   </div>
 </template>

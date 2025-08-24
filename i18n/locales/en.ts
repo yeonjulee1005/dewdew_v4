@@ -66,7 +66,7 @@ export default {
       description: [
         'The person who works hard cannot beat the person who enjoys.',
         'I am a developer who enjoys development and hobbies.',
-        'This page is made with \'Nuxt4(Future Version), Supabase\'.',
+        'This page is made with \'Nuxt4, Supabase\'.',
       ],
     },
     abilities: {
@@ -122,6 +122,16 @@ export default {
     inputPlaceholder: 'If you write in English or click the keyboard with the mouse, the 3D modeled hhkb keyboard will work below.',
   },
   portfolio: {
+    PFC021: {
+      title: 'ITMP',
+      description: [
+        'A service that I developed as a freelancer during my job change.',
+      ],
+      stack: [
+        'A management platform based on Vue3, with web accessibility and design optimization, and additional feature implementation',
+        'Development participation: Maintenance: 5%',
+      ],
+    },
     PFC020: {
       title: 'Wheels & Meets',
       description: [

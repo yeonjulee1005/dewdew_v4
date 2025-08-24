@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import TypeIt from 'typeit'
 
-const { locale } = useCustomLocale()
+const { locale } = useI18n()
 
 const { introTitleKo, introTitleEn } = useResumeData()
 

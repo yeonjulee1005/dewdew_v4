@@ -2,7 +2,7 @@
 const { t } = useLocale()
 const { path } = useRoute()
 
-const { textInclude } = useUi()
+const { textInclude } = useFormatter()
 const { open } = useEyeDropper()
 const { copy } = useClipboard()
 const toast = useToast()

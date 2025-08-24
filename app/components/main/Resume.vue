@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale } = useCustomLocale()
+const { locale } = useI18n()
 
 const { url } = useImageStorage()
 const { resumeKoList, resumeEnList } = useResumeData()

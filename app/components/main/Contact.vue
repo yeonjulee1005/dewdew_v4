@@ -6,9 +6,9 @@ import type { FormSubmitEvent } from '@nuxt/ui'
 const toast = useToast()
 const config = useRuntimeConfig()
 
-const { t } = useCustomLocale()
+const { t } = useI18n()
 
-const { emailRegex } = useUi()
+const { emailRegex } = useValidation()
 const { url } = useImageStorage()
 
 const schema = object({

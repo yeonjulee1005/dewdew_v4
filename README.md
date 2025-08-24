@@ -1,17 +1,16 @@
-![Dewdew](./.github/assets/logo_github.png)
+![Dewdew](./.github/assets/dewdew.jpg)
 
 # 🚀 Dewdew Portfolio
 
 > **Software Engineer 이연주의 개인 포트폴리오 웹사이트**  
 > 현대적인 웹 기술과 사용자 경험을 중시한 풀스택 개발자의 작품집
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dewdew/dewdew_v4)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Nuxt](https://img.shields.io/badge/Nuxt-4.0.3-00DC82?logo=nuxt.js)](https://nuxt.com/)
 [![Vue](https://img.shields.io/badge/Vue-3.5.19-4FC08D?logo=vue.js)](https://vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 
-[🌐 **Live Demo**](https://www.dewdew.dev) | [📱 **Mobile View**](https://www.dewdew.dev) | [📧 **Contact**](https://www.dewdew.dev/main#contact)
+[🌐 **Web Site**](https://www.dewdew.dev)
 
 ---
 

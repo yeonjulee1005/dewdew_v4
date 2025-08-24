@@ -5,7 +5,7 @@ import '@egjs/vue3-flicking/dist/flicking.css'
 
 const { uvData, airDiffusionData, weatherFirstData, weatherSecondData } = storeToRefs(useLocWeatherStore())
 
-const { airDiffusionColor, uvColor, humidityColor, weatherColor, temperatureColor } = useUi()
+const { airDiffusionColor, uvColor, humidityColor, weatherColor, temperatureColor } = useColorUtils()
 
 const plugin = [
   new AutoPlay({

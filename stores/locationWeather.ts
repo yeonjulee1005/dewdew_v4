@@ -19,7 +19,7 @@ export const useLocWeatherStore = defineStore('useLocWeatherStore', () => {
 
   const { weatherMapData, loadLivingData } = useWeatherMapData()
   const { livingIndexQuery, weatherQuery } = useQuery()
-  const { genDateFormat, getLastHour, getMinute } = useUi()
+  const { genDateFormat, getLastHour, getMinute } = useDateFormatter()
 
   const geoX = ref<number | undefined>(undefined)
   const geoY = ref<number | undefined>(undefined)

@@ -7,9 +7,9 @@ const { width } = useWindowSize()
 const appConfig = useAppConfig()
 const { meta, path } = useRoute()
 
-const { t } = useCustomLocale()
+const { t } = useI18n()
 
-const { genDateFormat } = useUi()
+const { genDateFormat } = useDateFormatter()
 
 const { windowSize } = storeToRefs(useWindowStore())
 const { viewMenuData } = storeToRefs(useMenuStore())

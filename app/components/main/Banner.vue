@@ -4,7 +4,7 @@ const { url } = useImageStorage()
 
 <template>
   <div class="relative sm:w-dvw sm:max-w-[1900px]">
-    <span class="absolute w-[220px] sm:w-[400px] md:w-[600px] top-24 sm:top-50 md:top-70 right-[-40px] sm:right-[-120px] md:right-[-160px] text-4xl sm:text-6xl md:text-8xl font-extrabold bg-gradient-to-tl from-blue-800 via-violet-400/90 to-indigo-700 bg-clip-text text-transparent transform rotate-90 z-10">
+    <span class="absolute w-[220px] sm:w-[400px] md:w-[600px] top-24 sm:top-50 md:top-70 right-[-40px] sm:right-[-120px] md:right-[-160px] text-4xl sm:text-6xl md:text-8xl font-['anton'] font-extrabold bg-gradient-to-tl from-blue-800 via-violet-400/90 to-indigo-700 bg-clip-text text-transparent transform rotate-90 z-10">
       {{ $t('main.intro.largeTitle') }}
     </span>
     <NuxtImg

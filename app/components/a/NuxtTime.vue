@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale } = useCustomLocale()
+const { locale } = useI18n()
 
 withDefaults(
   defineProps<{

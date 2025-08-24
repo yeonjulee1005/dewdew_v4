@@ -91,9 +91,6 @@ export default defineNuxtConfig({
     server: true,
     client: true,
   },
-  future: {
-    compatibilityVersion: 4,
-  },
   compatibilityDate: '2024-11-01',
   nitro: {
     preset: 'vercel',

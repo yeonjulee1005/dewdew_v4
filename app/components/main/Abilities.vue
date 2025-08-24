@@ -9,11 +9,11 @@ const niceLanguages = ref([
   { icon: 'i-logos-typescript-icon', label: 'TypeScript' },
   { icon: 'i-logos-javascript', label: 'JavaScript' },
   { icon: 'i-logos-astro-icon', label: 'Astro' },
-  { icon: 'i-logos-nuxt-icon', label: 'Nuxt3(Nuxt4 Future Version)' },
+  { icon: 'i-logos-nuxt-icon', label: 'Nuxt4' },
   { icon: 'i-logos-supabase-icon', label: 'Supabase' },
   { icon: 'i-logos-bun', label: 'Bun' },
   { icon: 'i-logos-yarn', label: 'Yarn' },
-  { icon: 'i-logos-nuxt-icon', label: 'Nuxt UI(v2, v3)' },
+  { icon: 'i-logos-nuxt-icon', label: 'Nuxt UI(v3)' },
   { icon: 'i-logos-nuxt-icon', label: 'Nuxt Eslint' },
   { icon: 'i-logos-nuxt-icon', label: 'Nuxt SEO' },
   { icon: 'i-logos-nuxt-icon', label: 'Nuxt I18n' },
@@ -63,6 +63,7 @@ const niceTools = ref([
   { icon: 'i-logos-vercel-icon', label: 'Vercel' },
   { icon: 'i-logos-arc', label: 'Arc' },
   { icon: '', label: 'Cursor' },
+  { icon: 'i-logos-claude-icon', label: 'Claude' },
   { icon: 'i-logos-visual-studio-code', label: 'VSCode' },
   { icon: 'i-logos-vim', label: 'Vim' },
   { icon: 'i-logos-github-icon', label: 'Github Desktop' },
@@ -95,6 +96,7 @@ const wellTools = ref([
 ])
 
 const usedTools = ref([
+  { icon: 'i-logos-create-react-app', label: 'React Native' },
   { icon: 'i-logos-docker-icon', label: 'Docker' },
   { icon: 'i-logos-android-vertical', label: 'Android Studio' },
   { icon: 'i-logos-xcode', label: 'Xcode' },

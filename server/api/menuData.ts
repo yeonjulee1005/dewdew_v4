@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
   const tableName = String(getQuery(event).tableName ?? 'viewMenu')
 
   try {
-    const { data, error }: SerializeObject = await createClient(config.public.supabaseUrl, config.public.supabaseKey, { db: { schema } })
+    const { data, error } = await createClient(config.public.supabaseUrl, config.public.supabaseKey, { db: { schema } })
       .from(tableName)
       .select('*')
       .order('index', { ascending: true })

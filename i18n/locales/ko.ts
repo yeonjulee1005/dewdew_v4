@@ -66,7 +66,7 @@ export default {
       description: [
         '노력하는 사람은 즐기는 사람을 이길 수 없습니다.',
         '개발과 취미를 즐기며 살아가는 개발자 이연주입니다.',
-        '본 페이지는 \'Nuxt4(Future Version), Supabase\' 로 제작되었습니다.',
+        '본 페이지는 \'Nuxt4, Supabase\' 로 제작되었습니다.',
       ],
     },
     abilities: {
@@ -122,6 +122,16 @@ export default {
     inputPlaceholder: '영어로 작성하거나 마우스로 키보드를 클릭하면, 아래의 3D 모델링된 hhkb 키보드가 동작합니다.',
   },
   portfolio: {
+    PFC021: {
+      title: '통합훈련관리플렛폼',
+      description: [
+        '이직기간 중 프리랜서로 진행한 유지보수 개발진행을 하였던 서비스입니다.',
+      ],
+      stack: [
+        'Vue3 기반의 관리플랫폼으로, 웹접근성 및 디자인 최적화와 더불어 부가적인 기능 구현',
+        '개발 참여: 유지보수: 5%',
+      ],
+    },
     PFC020: {
       title: 'Wheels & Meets',
       description: [

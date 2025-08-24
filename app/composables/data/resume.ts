@@ -17,7 +17,26 @@ export const useResumeData = () => {
       description: '[2006.03 ~ 2013.02] 경희대학교(서울) 물리학과 학사 졸업',
     },
     {
+      icon: 'i-akar-icons-briefcase',
+      label: '[2025.08 ~ Current] Team REmited',
+      slot: 'career',
+      description: [
+        'Tech Lead',
+        '개발팀 태크리드',
+        '영끌 서비스 개발',
+      ],
+    },
+    {
       icon: 'i-akar-icons-jar',
+      label: '[2025.07 ~ 2025.08] KMAC',
+      slot: 'career',
+      description: [
+        '프리랜서',
+        '통합훈련관리 플랫폼 유지보수 진행',
+      ],
+    },
+    {
+      icon: 'i-akar-icons-briefcase',
       label: '[2024.07 ~ 2025.06] 굿노드주식회사',
       slot: 'career',
       description: [
@@ -29,7 +48,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2024.02 ~ 2024.05] 이구구',
       slot: 'career',
       description: [
@@ -38,7 +57,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2022.04 ~ 2024.02] 가제트코리아',
       slot: 'career',
       description: [
@@ -52,7 +71,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2021.09 ~ 2022.4] 아브로소프트코리아',
       slot: 'career',
       description: [
@@ -63,7 +82,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2020.08 ~ 2021.9] 두원',
       slot: 'career',
       description: [
@@ -74,7 +93,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2018.07 ~ 2021.9] 비트로드',
       slot: 'career',
       description: [
@@ -84,7 +103,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2017.04 ~ 2017.6] 인베니아',
       slot: 'career',
       description: [
@@ -94,7 +113,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2016.01 ~ 2017.1] 베가',
       slot: 'career',
       description: [
@@ -113,7 +132,26 @@ export const useResumeData = () => {
       description: '[2006.03 ~ 2013.02] Graduated with a Bachelor degree in Physics from Kyung Hee University (Seoul)',
     },
     {
+      icon: 'i-akar-icons-briefcase',
+      label: '[2025.08 ~ Current] Team REmited',
+      slot: 'career',
+      description: [
+        'Tech Lead',
+        'Development team Tech Lead',
+        'YoungChal service development',
+      ],
+    },
+    {
       icon: 'i-akar-icons-jar',
+      label: '[2025.07 ~ 2025.08] KMAC',
+      slot: 'career',
+      description: [
+        'Freelancer',
+        'Maintenance of integrated training management platform',
+      ],
+    },
+    {
+      icon: 'i-akar-icons-briefcase',
       label: '[2024.07 ~ Current] Good Nodes Co., Ltd.',
       slot: 'career',
       description: [
@@ -124,7 +162,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2024.02 ~ 2024.05] Egugu',
       slot: 'career',
       description: [
@@ -133,7 +171,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2022.04 ~ Current] Gadget Korea',
       slot: 'career',
       description: [
@@ -147,7 +185,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2021.09 ~ 2022.4] Avrosoft Korea',
       slot: 'career',
       description: [
@@ -158,7 +196,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2020.08 ~ 2021.9] Doowon',
       slot: 'career',
       description: [
@@ -169,7 +207,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2018.07 ~ 2021.9] Beatroad',
       slot: 'career',
       description: [
@@ -179,7 +217,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2017.04 ~ 2017.6] Invenia',
       slot: 'career',
       description: [
@@ -189,7 +227,7 @@ export const useResumeData = () => {
       ],
     },
     {
-      icon: 'i-akar-icons-jar',
+      icon: 'i-akar-icons-briefcase',
       label: '[2016.01 ~ 2017.1] Bega',
       slot: 'career',
       description: [

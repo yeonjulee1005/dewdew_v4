@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useCustomLocale()
+const { t } = useI18n()
 
 useHead({
   title: t('pageTitle.main'),

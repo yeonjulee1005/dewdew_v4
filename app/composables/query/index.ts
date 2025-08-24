@@ -1,6 +1,6 @@
 export const useQuery = () => {
   const config = useRuntimeConfig()
-  const { splitByChar } = useUi()
+  const { splitByChar } = useFormatter()
 
   const livingIndexQuery = <T extends string, D extends number>(areaNo: D, dateTime: T) => {
     const searchParams = new URLSearchParams([
